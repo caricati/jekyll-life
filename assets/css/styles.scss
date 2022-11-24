@@ -8,15 +8,15 @@
   margin: 0;
 }
 
-$body-color: #F4F5FB;
-$body-contrast-color: #E7E8EF;
+$body-color: #f4f5fb;
+$body-contrast-color: #e7e8ef;
 $white-color: #ffffff;
-$primary-color: #FF3100;
+$primary-color: #ff3100;
 $primary-color-hover: #f4461b;
-$text-color: #18202E;
-$dark-bg-color: #18202E;
-$text-light-color: #626E84;
-$dark-text-color: #0D0F13;
+$text-color: #18202e;
+$dark-bg-color: #18202e;
+$text-light-color: #626e84;
+$dark-text-color: #0d0f13;
 $gray-3-color: #c7c7c7;
 $gray-4-color: #eeeeee;
 $gray-5-color: #f9f9f9;
@@ -44,6 +44,7 @@ h5,
 h6 {
   color: $text-color;
   font-family: $heading-font-family;
+  letter-spacing: -1px;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -54,10 +55,15 @@ p {
 }
 
 h1.pitch-heading {
-  font-size: 3.625rem;
+  font-size: 4.5rem;
   line-height: 1.2;
   text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.3);
   font-weight: bold;
+  max-width: 900px;
+
+  @media screen and (max-width: 400px) {
+    font-size: 3rem;
+  }
 }
 
 .left {
@@ -97,6 +103,24 @@ img.img-full-cover {
   object-fit: cover;
 }
 
+.anim-pulse-smooth {
+  animation-name: stretch;
+  animation-duration: 15s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+
+  @keyframes stretch {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+}
+
 // positions
 .relative {
   position: relative;
@@ -104,6 +128,10 @@ img.img-full-cover {
 
 .absolute {
   position: absolute;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 // Colors
@@ -218,7 +246,7 @@ img.img-full-cover {
   .social-media {
     display: flex;
     align-items: center;
-    
+
     a {
       margin-left: 1rem;
     }
@@ -254,9 +282,9 @@ img.img-full-cover {
       &:not(:last-child) {
         margin-right: -16px;
       }
-  
+
       &:not(.count)::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 2px;
         left: 2px;
@@ -275,7 +303,7 @@ img.img-full-cover {
         font-size: 14px;
         font-weight: bold;
       }
-  
+
       & > img {
         width: 24px;
         height: 24px;
