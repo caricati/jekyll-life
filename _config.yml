@@ -23,6 +23,7 @@ email: mrcaricati@proton.me
 description: >-
   Missões em locais remotos de difícil acesso, pescaria, construção de ferramentas, customização de motocicletas, motores diesel e 4x4.
 baseurl: ""
+galleryurl: "/static/gallery/"
 keywords:
   - Vídeos
   - Outdoor

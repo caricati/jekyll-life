@@ -1,0 +1,7 @@
+<div id="{{ include.id }}" class="map"></div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    loadMap("{{ include.id }}", {{ include.cords }}, {{ include.zoom }}, {{ include.pin }});
+  })  
+</script>
