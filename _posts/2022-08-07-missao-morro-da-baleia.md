@@ -67,7 +67,7 @@ thumbUrl: /assets/uploads/220807/thumb-v.jpg
   {% include map.html id="map2" cords="[-14.131939, -47.661352]" zoom="15" pin="[{ cords: [-14.128431, -47.660065], tooltip: 'Morro da Baleia' }, { cords: [-14.136072, -47.662307], tooltip: 'Acampamento' }]"  %}
   <div class="road-timeline max-width mb-120 mt-120">
     <div class="street">
-      <div class="moto"></div>
+      <div class="moto vehicle"></div>
     </div>
     <div class="stories">
       <div class="transit-board begin"><span>Início</span></div>
@@ -145,7 +145,7 @@ thumbUrl: /assets/uploads/220807/thumb-v.jpg
           <p>
             Depois de consumir uma boa parte das cervejas e da comida que
             havíamos comprado no dia anterior, voltamos para Alto Paraíso de
-            Goiás para reabastecer os nosso mantimentos.
+            Goiás para reabastecer os nossos mantimentos.
           </p>
           <p>
             Tiramos o dia mais para descanso e jogar conversa fora. Mas

@@ -29,13 +29,13 @@
           </div>
         </section>
       {% endfor %}
-      {% include header.html %}
+      {% include float-menu.html %}
       {% if site.posts.size > 1 %}
         <section class="padding-top-72 padding-bottom-72 bg-contrast">
           <div class="max-width videos-x-list">
-            {% for post in site.posts offset:1 %}
+            {% for post in site.posts %}
               <a class="video-item" href="{{ post.url }}">
-                <img src="{{ post.thumb }}" />
+                <img src="{{ post.thumbUrl }}" />
               </a>
             {% endfor %}
           </div>
