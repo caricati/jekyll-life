@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Mr. Caricati
+title: A vida de Mr. Caricati
 email: mrcaricati@proton.me
 description: >-
   Missões em locais remotos de difícil acesso, pescaria, construção de ferramentas, customização de motocicletas, motores diesel e 4x4.
@@ -40,9 +40,7 @@ keywords:
   - Pescaria
   - v2
   - Moto custom
-url: "https://mrcaricati.com/"
-twitter_username: mrcaricati
-github_username:  caricati
+url: "https://life.mrcaricati.com/"
 
 # Build settings
 theme: minima
