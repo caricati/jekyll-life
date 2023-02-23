@@ -17,20 +17,20 @@ $(document).ready(function () {
   });
 
   function closeNav() {
-    const nav = $("#float-menu-nav")
+    const nav = $("#float-menu-nav");
     nav.slideUp(200);
-    nav.attr('aria-hidden', 'true');
+    nav.attr("aria-hidden", "true");
   }
 
   function openNav() {
-    const nav = $("#float-menu-nav")
+    const nav = $("#float-menu-nav");
     nav.slideDown(200);
-    nav.attr('aria-hidden', 'false');
+    nav.attr("aria-hidden", "false");
   }
 
-  $("#float-menu-trigger").on("click", function() {
+  $("#float-menu-trigger").on("click", function () {
     const nav = $("#float-menu-nav");
-    nav.attr('aria-hidden') === 'true' ? openNav() : closeNav();
+    nav.attr("aria-hidden") === "true" ? openNav() : closeNav();
   });
 
   $("#float-menu-nav a").on("click", closeNav);
@@ -42,7 +42,7 @@ function loadMap(id, cords, zoom, pins) {
 
   // L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
   L.tileLayer(
-    "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png",
+    "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
     {
       attribution: "Tiles &copy; Esri",
     }
@@ -97,9 +97,7 @@ $(document).ready(function loadIGStories() {
   const storiesUrl =
     "https://graph.facebook.com/17841407771133380/stories?fields=id,media_url,media_type,thumbnail_url,permalink,timestamp&access_token=EAARGZAVd79TEBAFEXVRj3ZACPusIVORQAS95V07t5nvdLHr1q2iPbpAvswoRtZClbEg9xLnG6KZAIW4ZAP0ZBTxg5CLNgRG05pl4A0ZBCOwh2u5rtjT1INSYSTZAAH40BacD9e9CBdTNnwK8RqidTAJa4CT6VC9cxS5Ed2YEtk2ZAsFxUk7XOQUp7";
   $.get(storiesUrl, function (res) {
-    const data = [
-      ...res.data,
-    ];
+    const data = [...res.data];
 
     const htmlList = data.map(function (item) {
       if (item.thumbnail_url) {
