@@ -142,7 +142,7 @@ $(document).ready(function loadIGStories() {
 function sendMessage(params, callback) {
   $.ajax({
     type: "POST",
-    url: "http://localhost:3000/contact",
+    url: "https://api.mrcaricati.com/contact",
     data: JSON.stringify({
       name: params.name,
       contact: params.contact,
