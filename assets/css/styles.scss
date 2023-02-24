@@ -36,6 +36,12 @@ body {
   background-color: $body-color;
 }
 
+input,
+textarea,
+select {
+  font: normal 16px "Oxygen", sans-serif;
+}
+
 a {
   color: $primary-color;
   text-decoration: none;
@@ -1056,7 +1062,7 @@ img.img-full-cover {
       margin-bottom: 0.875rem;
       padding-left: 32px;
       border-radius: 4px;
-      
+
       background-position: left center;
       background-repeat: no-repeat;
       background-size: 18px;
@@ -1092,6 +1098,43 @@ img.img-full-cover {
       &.date {
         background-image: url("../img/icons/date.svg");
       }
+    }
+  }
+}
+
+#contact-page {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  padding-top: 8rem;
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: $text-light-color;
+    margin-bottom: 2rem;
+  }
+
+  label {
+    color: $text-light-color;
+    display: inline-block;
+    margin-bottom: 0.625rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid $text-light-color;
+    background-color: $dark-bg-color;
+    outline: none;
+    color: $text-color;
+
+    &:focus {
+      border-color: $primary-color-hover;
     }
   }
 }

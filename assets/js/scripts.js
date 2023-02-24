@@ -135,10 +135,26 @@ $(document).ready(function loadIGStories() {
       `
         )
       );
-
-      // $("#ig-stories ul").on("click", function () {
-      //   alert("enter");
-      // });
     }
   });
 });
+
+function sendMessage(params, callback) {
+  $.ajax({
+    type: "POST",
+    url: "http://localhost:3000/contact",
+    data: JSON.stringify({
+      name: params.name,
+      contact: params.contact,
+      message: params.message,
+    }),
+    contentType: "application/json",
+    dataType: "json",
+    success: function (data) {
+      callback({ ok: data.ok });
+    },
+    fail: function (data) {
+      callback({ ok: true });
+    },
+  });
+}
