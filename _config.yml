@@ -44,7 +44,9 @@ keywords:
   - Pescaria
   - v2
   - Moto custom
-url: "https://mrcaricati.com/"
+url: "https://mrcaricati.com"
+twitter_username: mrcaricati
+github_username: caricati
 
 # Build settings
 theme: minima

@@ -238,7 +238,7 @@ h1.pitch-heading {
   &.modal-alert {
     max-width: 420px;
     h3 {
-      font-size: 48px;
+      font-size: 2rem;
       margin-bottom: 1rem;
     }
 
@@ -655,6 +655,15 @@ img.img-full-cover {
   border-width: 1px;
   border-radius: 2px;
 
+  &.animete-hover-icon-right svg {
+    transform: translate(0, 1px);
+    transition: ease $transition-time transform;
+  }
+
+  &.animete-hover-icon-right:hover svg {
+    transform: translate(5px, 1px);
+  }
+
   &.large {
     font-size: 15px;
     border-width: 2px;
@@ -662,14 +671,18 @@ img.img-full-cover {
   }
 
   &:hover {
-    box-shadow: 3px 6px 10px 4px rgba(0, 0, 0, 0.1);
+    color: $white-color;
+    border-color: $primary-color;
+    background-color: $primary-color;
   }
 
   &.primary {
+    color: $body-color;
     border-color: $white-color;
-    background-color: transparent;
-    
+    background-color: $white-color;
+
     &:hover {
+      color: $body-color;
       border-color: $primary-color;
       background-color: $primary-color;
     }
@@ -898,7 +911,6 @@ img.img-full-cover {
     }
   }
 }
-
 
 .video-section {
   height: 100vh;
