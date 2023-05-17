@@ -13,7 +13,7 @@ tags:
   <div class="content">
     <header>
       <h1>Fale comigo!</h1>
-      <p>Preencha o formulário abaixo com seu nome, email, e a mensagem que você quer mandar para mim. Seja breve, você tem 1024 caracteres para escrever sua mensagem.</p>
+      <p>Preencha o formulário abaixo com seu nome, email, e a mensagem que você quer mandar para mim.</p>
     </header>
     <form id="contact-form">
       <label for="name">Nome</label>

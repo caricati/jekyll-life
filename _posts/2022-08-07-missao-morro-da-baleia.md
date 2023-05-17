@@ -15,7 +15,7 @@ tags:
   - outdoor
 ---
 
-{% include frame-video.html videourl="https://www.youtube.com/embed/aqLnCDQT6pY?autoplay=0" %}
+{% include frame-video.html videourl="https://www.youtube.com/embed/aqLnCDQT6pY?autoplay=1" %}
 <div>
   <section>
     <header class="heading max-width">
@@ -36,10 +36,7 @@ tags:
         <p>
           Chegou o grande dia! Quem poderia imaginar, que uma amizade feita
           pelo próprio YouTube em 2014 fosse responsável por muitos momentos
-          felizes.
-        </p>
-        <p>
-          A minha direita está o Patrick, o cara mais empolgado dos rolês,
+          felizes. Na minha direita está o Patrick, o cara mais empolgado dos rolês,
           se você chamar ele para subir o Monte Everest de moto,
           provavelmente ele irá sorrindo.
         </p>
