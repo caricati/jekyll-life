@@ -16,6 +16,15 @@ $(document).ready(function () {
     this.appendChild(button);
   });
 
+  // characters counter
+  $("[data-counter-from]").each(function (element) {
+    const $el = $(this);
+    const $from = $($el.attr("data-counter-from"));
+    $from.on("input", function () {
+      $el.html(this.value.length || 0);
+    });
+  });
+
   function closeNav() {
     const nav = $("#float-menu-nav");
     nav.slideUp(200);
@@ -92,52 +101,6 @@ function loadMap(id, cords, zoom, pins) {
     gtag("config", "G-SWMTFR44KJ");
   });
 })();
-
-$(document).ready(function loadIGStories() {
-  const storiesUrl =
-    "https://graph.facebook.com/17841407771133380/stories?fields=id,media_url,media_type,thumbnail_url,permalink,timestamp&access_token=EAARGZAVd79TEBAFEXVRj3ZACPusIVORQAS95V07t5nvdLHr1q2iPbpAvswoRtZClbEg9xLnG6KZAIW4ZAP0ZBTxg5CLNgRG05pl4A0ZBCOwh2u5rtjT1INSYSTZAAH40BacD9e9CBdTNnwK8RqidTAJa4CT6VC9cxS5Ed2YEtk2ZAsFxUk7XOQUp7";
-  $.get(storiesUrl, function (res) {
-    const data = [...res.data];
-
-    const htmlList = data.map(function (item) {
-      if (item.thumbnail_url) {
-        return '<li><img src="' + item.thumbnail_url + '" /></li>';
-      }
-      return '<li><img src="' + item.media_url + '" /></li>';
-    });
-
-    const totalLengthItems = htmlList.length;
-
-    if (totalLengthItems > 0) {
-      const items =
-        totalLengthItems > 3
-          ? htmlList
-              .slice(0, 3)
-              .concat(
-                '<li class="count">' +
-                  (totalLengthItems - 3 > 9 ? "9+" : totalLengthItems - 3) +
-                  "</li>"
-              )
-          : htmlList;
-      $("#header-stories").html("<ul>" + items.join("") + "</ul>");
-
-      $("#amp-story-wrapper").append(
-        data.map(
-          (story, index) => `
-        <amp-story-page id="page${index + 1}">
-          <amp-story-grid-layer template="vertical">
-            <amp-img src="${story.media_url}"
-                width="720" height="1280"
-                layout="responsive">
-            </amp-img>
-          </amp-story-grid-layer>
-        </amp-story-page>
-      `
-        )
-      );
-    }
-  });
-});
 
 function sendMessage(params, callback) {
   $.ajax({

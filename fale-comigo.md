@@ -21,10 +21,15 @@ tags:
       <label for="contact">Email</label>
       <input type="email" id="contact" name="contact" maxlength="50" placeholder="nome@email.com" required />
       <label for="message">Mensagem</label>
-      <textarea name="message" id="message" maxlength="1024" rows="10" placeholder="Escreva uma mensagem para mim..." required></textarea>
-      <button type="submit" id="send-contact" class="btn primary">
-        <span>Enviar</span>
-      </button>
+      <textarea name="message" id="message" maxlength="2048" rows="10" placeholder="Escreva uma mensagem para mim..." required></textarea>
+      <p class="counter">
+        <span data-counter-from="#message">0</span>/<span>2048</span>
+      </p>
+      <div class="flex-space-between">
+        <button type="submit" id="send-contact" class="btn primary">
+          <span>Enviar</span>
+        </button>
+      </div>
     </form>
   </div>
   {% include modal-alert.html id="modal-success" jsOnClickFn="window.location='/'" title="Mensagem enviada" message="Sua mensagem foi enviada para mim. Fique de olho no seu e-mail que eu posso te responder em breve." %}

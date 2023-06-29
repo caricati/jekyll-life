@@ -185,6 +185,10 @@ h1.pitch-heading {
   text-align: left;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-light {
   color: $text-light-color;
 }
@@ -332,6 +336,11 @@ img.img-full-cover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
 }
 
 .flex-x-center {
@@ -1364,6 +1373,13 @@ img.img-full-cover {
     margin: 0 auto;
   }
 
+  .counter {
+    text-align: right;
+    color: $text-light-color;
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
   header {
     h1 {
       margin-bottom: 1rem;
@@ -1383,6 +1399,10 @@ img.img-full-cover {
   input,
   textarea {
     background-color: $box-contrast-color;
+  }
+
+  textarea {
+    margin-bottom: 0;
   }
 }
 

@@ -19,11 +19,12 @@
 # in the templates via {{ site.myvariable }}.
 
 title: A vida de Mr. Caricati
-email: mrcaricati@proton.me
+email: thales.caricati@gmail.com
 description: >-
   Missões em locais remotos de difícil acesso, pescaria, construção de ferramentas, customização de motocicletas, motores diesel e 4x4.
 baseurl: ""
 galleryurl: "/static/gallery/"
+language: "pt"
 keywords:
   - Vídeos
   - Outdoor

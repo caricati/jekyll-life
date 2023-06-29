@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ metadata.language }}">
+<html lang="{{ site.language }}">
   <head>
     {% include meta.html %}
     <title>{{ site.title }}</title>
@@ -41,7 +41,7 @@
           <div class="max-width videos-x-list">
             {% for post in site.posts %}
               <a class="video-item" href="{{ post.url }}">
-                <img src="{{ post.thumbUrl }}" />
+                <img src="{{ post.thumbUrl }}" alt="{{ post.title }}" />
               </a>
             {% endfor %}
           </div>
