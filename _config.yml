@@ -23,8 +23,10 @@ email: thales.caricati@gmail.com
 description: >-
   Missões em locais remotos de difícil acesso, pescaria, construção de ferramentas, customização de motocicletas, motores diesel e 4x4.
 baseurl: ""
-galleryurl: "/static/gallery/"
+gallery_path: "/assets/gallery/"
 language: "pt"
+sass:
+  style: compressed
 keywords:
   - Vídeos
   - Outdoor

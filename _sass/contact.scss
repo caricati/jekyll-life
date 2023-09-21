@@ -1,0 +1,47 @@
+#contact-page {
+  background-color: $box-contrast-color;
+  margin-bottom: 4rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem;
+  box-sizing: border-box;
+
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .counter {
+    text-align: right;
+    color: $text-light-color;
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  header {
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  label {
+    color: $text-light-color;
+    display: inline-block;
+    margin-bottom: 0.625rem;
+  }
+
+  input,
+  textarea {
+    background-color: $box-contrast-color;
+  }
+
+  textarea {
+    margin-bottom: 0;
+  }
+}

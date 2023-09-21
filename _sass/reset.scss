@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $text-color;
+  font: normal 16px $default-font-family;
+  background-color: $body-color;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: $white-color;
+  background: $primary-color;
+}
+
+::selection {
+  color: $white-color;
+  background: $primary-color;
+}
+
+input,
+textarea,
+select {
+  font: normal 16px $default-font-family;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.13);
+  background-color: $dark-bg-color;
+  outline: none;
+  color: $text-color;
+  transition: ease-out all 300ms;
+  border-radius: 2px;
+
+  &::placeholder {
+    color: $text-light-color;
+  }
+
+  &:focus {
+    border-color: $primary-color-hover;
+    box-shadow: 0 0 0 6px $primary-color-shadow;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text-heading-color;
+  font-family: $heading-font-family;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+}
+
+p {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}

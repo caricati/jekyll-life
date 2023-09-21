@@ -121,3 +121,87 @@ function sendMessage(params, callback) {
     },
   });
 }
+
+$(document).ready(function () {
+  const galleryModalTemplate =
+    '<div class="overlay" id="gallery-modal">' +
+    '<button type="button" class="close-gallery-modal">' +
+    '<img src="/assets/img/icons/close.svg" alt="close buttun" />' +
+    "</button>" +
+    '<div id="gallery-modal-content"></div>' +
+    "</div>";
+
+  const links = $(".photo-gallery a");
+
+  function closeModal() {
+    $("#gallery-modal").remove();
+    document.body.classList.remove('lock-scroll')
+  }
+
+  function setModalImage(src) {
+    const galleryContainer = document.getElementById("gallery-modal-content");
+    galleryContainer.innerHTML = '<img src="' + src + '" alt="" />';
+  }
+
+  function listenerArrowCommands(event) {
+    const isArrowLeft = event.keyCode === 37 || event.key === "ArrowLeft";
+    const isArrowRight = event.keyCode === 39 || event.key === "ArrowRight";
+    const $modal = $("#gallery-modal");
+    $modal.attr("data-gallery");
+    const arr = Array.from(document.querySelectorAll(".photo-gallery a"))
+      .filter(
+        (el) =>
+          el.getAttribute("data-gallery") === $modal.attr("data-gallery-ref")
+      )
+      .map((el) => el.getAttribute("href"));
+    const current = $modal.find("#gallery-modal-content img").attr("src");
+    const currentIndex = arr.indexOf(current);
+
+    // prev
+    if (isArrowLeft) {
+      if (currentIndex === 0) {
+        return setModalImage(arr[arr.length - 1])
+      }
+      return setModalImage(arr[currentIndex - 1])
+    }
+
+    // next
+    if (isArrowRight) {
+      if (currentIndex === arr.length - 1) {
+        return setModalImage(arr[0])
+      }
+      return setModalImage(arr[currentIndex + 1])
+    }
+  }
+
+  function handleClose(event) {
+    if (event.keyCode === 27 || event.key === "Escape") {
+      closeModal();
+    }
+  }
+
+  $(document).on("keydown", function (event) {
+    handleClose(event);
+    listenerArrowCommands(event);
+  });
+
+  function generateModal(galleryNamespace) {
+    const galleryModal = document.getElementById("gallery-modal");
+    if (!galleryModal) {
+      $("#portal").append(galleryModalTemplate);
+      $(".close-gallery-modal").click(function () {
+        closeModal();
+      });
+    }
+    document
+      .getElementById("gallery-modal")
+      .setAttribute("data-gallery-ref", galleryNamespace);
+  }
+
+  links.on("click", function (event) {
+    event.preventDefault();
+    generateModal(this.getAttribute("data-gallery"));
+    setModalImage(this.getAttribute("href"));
+    document.body.classList.add('lock-scroll')
+  });
+});

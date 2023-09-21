@@ -1,0 +1,15 @@
+---
+# only Main files contain this front matter, not partials.
+---
+
+@import "variables";
+@import "reset";
+@import "helpers";
+@import "layout";
+@import "animation";
+@import "components";
+
+// pages
+@import "about-me";
+@import "contact";
+@import "links";

@@ -4,7 +4,7 @@
     {% include meta.html %}
     <title>{{ site.title }}</title>
 
-    <link rel="stylesheet" href="{{'/assets/css/styles.css' | absolute_url}}">
+    <link rel="stylesheet" href="{{'/assets/css/main.css' | absolute_url}}">
   </head>
   <body>
     <main>
@@ -25,7 +25,7 @@
               href="{{ post.url }}"
             >
               Acompanhar
-              <svg class="float-right mf-10" width="18px" height="18px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg class="float-right ml-10" width="18px" height="18px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <g>
                   <polyline fill="none" points="16.4 7 21.5 12 16.4 17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
                   <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="2.5" x2="19.2" y1="12" y2="12"/>
@@ -49,6 +49,7 @@
       {% endif %}
       {% include footer.html %}
     </main>
+    <div id="portal"></div>
 
     <script type="text/javascript" src="{{'assets/js/jquery.min.js' | absolute_url}}"></script>
     <script type="text/javascript" src="{{'assets/js/scripts.js' | absolute_url}}"></script>

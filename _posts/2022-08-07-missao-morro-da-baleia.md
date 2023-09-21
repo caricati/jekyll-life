@@ -32,7 +32,7 @@ tags:
         <img src="{{ '/assets/uploads/220807/20220808_145120.jpg' | absolute_url}}" />
       </figure>
       <div class="photo-legend">
-        <h2 class="margin-bottom-16">Os motokas</h2>
+        <h2 class="margin-bottom-16 heading-underscore">Os motokas</h2>
         <p>
           Chegou o grande dia! Quem poderia imaginar, que uma amizade feita
           pelo próprio YouTube em 2014 fosse responsável por muitos momentos
@@ -49,7 +49,7 @@ tags:
     </article>
     <article class="photo-topics max-width margin-bottom-120">
       <div class="photo-legend">
-        <h2 class="margin-bottom-16">Cada momento conta</h2>
+        <h2 class="margin-bottom-16 heading-underscore">Cada momento conta</h2>
         <p>
           Muitas pessoas visam na viagem, seu destino. Mas para mim, uma boa
           viagem começa sempre na jornada, os pontos de parada, as comidas
