@@ -47,6 +47,14 @@ permalink: /links
       </p>
       <img src="/assets/img/links/arrow.svg" class="arrow-icon" />
     </a>
+    <a href="https://www.pexels.com/@mr-caricati-739231378/" target="_blank">
+      <img src="/assets/img/links/pexels.svg" class="social-icon" />
+      <p>
+        <span class="name">Pexels</span>
+        <span class="uname">Mr. Caricati</span>
+      </p>
+      <img src="/assets/img/links/arrow.svg" class="arrow-icon" />
+    </a>
   </nav>
   <footer>
     <small>© 2023 Todos os direitos reservados.</small>
