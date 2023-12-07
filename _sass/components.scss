@@ -584,7 +584,11 @@
         }
 
         .infos {
-          justify-content: flex-start !important;
+          display: block;
+
+          & > * {
+            margin-left: 0 !important;
+          }
         }
       }
     }
