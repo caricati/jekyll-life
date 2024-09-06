@@ -5,7 +5,8 @@ date: 2022-08-07
 layout: single
 pitchUrl: /assets/uploads/220807/pitch.jpg
 thumbUrl: /assets/uploads/220807/thumb-v.jpg
-categories: outdoor
+categories:
+  - outdoor
 tags: 
   - roadtrip
   - viagem
@@ -13,6 +14,8 @@ tags:
   - trilha
   - acampamento
   - outdoor
+  - movie
+highlight: true
 ---
 
 {% include frame-video.html videourl="https://www.youtube.com/embed/aqLnCDQT6pY?autoplay=1" %}

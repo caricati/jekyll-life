@@ -1,0 +1,46 @@
+#gameplay {
+
+  header.heading {
+    text-align: left;
+
+    p {
+      margin-top: 2rem;
+    }
+  }
+  
+  .game-info {
+    display: flex;
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    .tags {
+      margin-bottom: 0.625rem;
+
+      span {
+        display: inline-block;
+        padding: 0.25rem 0.625rem 0;
+        background-color: $text-light-color;
+      }
+    }
+
+    .game-info-thumb {
+      max-width: 180px;
+      margin-right: 2rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 990px) {
+      display: block;
+
+      .game-info-thumb {
+        max-width: 120px;
+      }
+    }
+  }
+
+}

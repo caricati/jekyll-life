@@ -31,6 +31,14 @@ permalink: /links
       </p>
       <img src="/assets/img/links/arrow.svg" class="arrow-icon" />
     </a>
+    <a href="https://twitch.com/mrcaricati/" target="_blank">
+      <img src="/assets/img/links/twitch.svg" class="social-icon" />
+      <p>
+        <span class="name">Twitch</span>
+        <span class="uname">@mrcaricati</span>
+      </p>
+      <img src="/assets/img/links/arrow.svg" class="arrow-icon" />
+    </a>
     <a href="https://br.pinterest.com/mrcaricati/" target="_blank">
       <img src="/assets/img/links/pinterest.svg" class="social-icon" />
       <p>
@@ -58,6 +66,6 @@ permalink: /links
     -->
   </nav>
   <footer>
-    <small>© 2023 Todos os direitos reservados.</small>
+    <small>© 2024 Todos os direitos reservados.</small>
   </footer>
 </section>

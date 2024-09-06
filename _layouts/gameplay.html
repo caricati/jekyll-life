@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="{{'/assets/css/main.css' | absolute_url}}">
   </head>
   <body>
-    {% assign highlights = site.posts | where: "highlight", "true" %}
     <main>
-      {% for post in highlights limit:1 %}
+      {% for post in site.categories.gameplay limit:1 %}
         <section
           id="pitch"
           class="full-height flex-all-center relative box-shadow overflow-hidden"
@@ -37,32 +36,15 @@
         </section>
       {% endfor %}
       {% include float-menu.html %}
-      {% if site.posts.size > 0 %}
+      {% if site.categories.gameplay.size > 0 %}
         <section class="padding-top-72 padding-bottom-72 bg-contrast">
-          {% assign movies = site.posts | where_exp: "item", "item.tags contains 'movie'" %}
-
-          {% if movies.size > 0 %}
-            <div class="max-width videos-x-list">
-              {% for post in movies %}
-                <a class="video-item" href="{{ post.url }}">
-                  <img src="{{ post.thumbUrl }}" alt="{{ post.title }}" />
-                </a>
-              {% endfor %}
-            </div>
-          {% endif %}
-
-
-          {% assign gameplays = site.posts | where_exp: "item", "item.categories contains 'gameplay'" %}
-          {% if gameplays.size > 0 %}
-            <h3 class="max-width mt-32 mb-16 heading-underscore font-size-18">Gameplay</h3>
-            <div class="max-width videos-x-list">
-              {% for post in gameplays %}
+          <div class="max-width videos-x-list">
+            {% for post in site.categories.gameplay %}
               <a class="video-item" href="{{ post.url }}">
                 <img src="{{ post.thumbUrl }}" alt="{{ post.title }}" />
               </a>
-              {% endfor %}
-            </div>
-          {% endif %}
+            {% endfor %}
+          </div>
         </section>
       {% endif %}
       {% include footer.html %}
