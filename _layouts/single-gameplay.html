@@ -18,13 +18,13 @@
   </head>
   <body>
     <main>
-      {% include float-menu.html %}
-      {% include frame-video.html videourl=page.videoUrl %}
+      {% include float-menu.html %} {% include frame-video.html
+      videourl=page.videoUrl %}
       <div id="gameplay" class="max-width">
         <header class="heading">
           <h1>{{ page.title }}</h1>
           {% if page.description.size > 0 %}
-            <p>{{ page.description }}</p>
+          <p>{{ page.description }}</p>
           {% endif %}
         </header>
         {{ content }}
@@ -46,11 +46,40 @@
               <span>Primeira pessoa</span>
             </div>
             <p>
-              Battlefield 1 é um jogo eletrônico de tiro em primeira pessoa
-              desenvolvido pela DICE e publicada pela Electronic Arts. É o
-              décimo quarto jogo da franquia Battlefield. Foi lançado em outubro
-              de 2016 para Microsoft Windows, PlayStation 4 e Xbox One. Foi um
-              grande sucesso de crítica e vendas.
+              Battlefield 1 é um jogo de tiro em primeira pessoa ambientado na
+              Primeira Guerra Mundial. Lançado em 2016, o jogo apresenta uma
+              narrativa que explora diferentes frentes e aspectos do conflito
+              global. A história é contada através de uma série de campanhas
+              individuais, cada uma focada em diferentes personagens e eventos
+              da guerra. O jogo leva os jogadores a viver batalhas épicas em
+              locais históricos, como as trincheiras do Ocidente, as montanhas
+              da Itália e os desertos da Arábia.
+            </p>
+          </div>
+          {% endif %} {% if page.game == 'scum' %}
+          <figure class="game-info-thumb">
+            <img
+              src="{{'assets/img/games/thumb/scum.jpg' | absolute_url}}"
+              alt="Battlefield 1"
+            />
+          </figure>
+          <div>
+            <h2>Scum</h2>
+            <div class="tags">
+              <span>Sobrevivencia</span>
+              <span>Apocalipse</span>
+              <span>Zumbi</span>
+            </div>
+            <p>
+              SCUM é um jogo de sobrevivência de mundo aberto que se passa em
+              uma ilha fictícia, onde você, como prisioneiro, participa de um
+              reality show brutal. O jogo é conhecido por sua complexidade e
+              simulação detalhada, exigindo que você gerencie aspectos como
+              fome, sede, temperatura e estresse. Ele oferece um sistema de
+              habilidades e atributos profundos, além de um vasto mundo aberto
+              para explorar. Combinando elementos de PvE e PvP, SCUM proporciona
+              uma experiência imersiva e desafiadora para quem gosta de jogos de
+              sobrevivência realistas.
             </p>
           </div>
           {% endif %}
