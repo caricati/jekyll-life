@@ -109,6 +109,7 @@
   grid-template-columns: repeat(auto-fit, 230px);
 
   .video-item {
+    width: 230px;
     position: relative;
     height: 350px;
     overflow: hidden;
@@ -136,6 +137,11 @@
       bottom: 1rem;
       left: 1rem;
     }
+  }
+
+  @media screen and (max-width: $max-width-container) {
+    grid-auto-flow: column;
+    overflow: auto;
   }
 }
 

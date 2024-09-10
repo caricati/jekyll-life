@@ -42,7 +42,7 @@
           {% assign movies = site.posts | where_exp: "item", "item.tags contains 'movie'" %}
 
           {% if movies.size > 0 %}
-            <div class="max-width videos-x-list">
+            <div class="max-width videos-x-list mb-72">
               {% for post in movies %}
                 <a class="video-item" href="{{ post.url }}">
                   <img src="{{ post.thumbUrl }}" alt="{{ post.title }}" />
@@ -54,7 +54,7 @@
 
           {% assign gameplays = site.posts | where_exp: "item", "item.categories contains 'gameplay'" %}
           {% if gameplays.size > 0 %}
-            <h3 class="max-width mt-32 mb-16 heading-underscore font-size-18">Gameplay</h3>
+            <h3 class="max-width mb-16 heading-underscore font-size-18">Gameplay</h3>
             <div class="max-width videos-x-list">
               {% for post in gameplays %}
               <a class="video-item" href="{{ post.url }}">
