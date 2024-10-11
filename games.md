@@ -9,7 +9,9 @@ published: false
     <div class="max-width videos-x-list">
       {% for post in site.categories.games %}
         <a class="video-item" href="{{ post.url }}">
-          <img src="{{ post.thumbUrl }}" alt="{{ post.title }}" />
+          <figure>
+            <img src="{{ post.thumbUrl }}" alt="{{ post.title }}" />
+          </figure>
         </a>
       {% endfor %}
     </div>

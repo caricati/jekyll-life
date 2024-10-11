@@ -45,7 +45,9 @@
             <div class="max-width videos-x-list mb-72">
               {% for post in movies %}
                 <a class="video-item" href="{{ post.url }}">
-                  <img src="{{ post.thumbUrl }}" alt="{{ post.title }}" />
+                  <figure>
+                    <img src="{{ post.thumbUrl }}" alt="{{ post.title }}" />
+                  </figure>
                 </a>
               {% endfor %}
             </div>
@@ -58,7 +60,9 @@
             <div class="max-width videos-x-list">
               {% for post in gameplays %}
               <a class="video-item" href="{{ post.url }}">
-                <img src="{{ post.thumbUrl }}" alt="{{ post.title }}" />
+                <figure>
+                  <img src="{{ post.thumbUrl }}" alt="{{ post.title }}" />
+                </figure>
               </a>
               {% endfor %}
             </div>
