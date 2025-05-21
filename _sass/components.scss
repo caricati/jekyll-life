@@ -689,10 +689,11 @@
   ul {
     color: $text-color;
     list-style: none;
+    margin-bottom: 1rem;
 
     li {
       margin-right: 1rem;
-      margin-bottom: 0.875rem;
+      margin-bottom: 0.75rem;
       padding-left: 32px;
       border-radius: 4px;
 
@@ -730,6 +731,10 @@
 
       &.date {
         background-image: url("../img/icons/date.svg");
+      }
+
+      &.arrow-right {
+        background-image: url("../img/icons/arrow-right.svg");
       }
     }
   }
