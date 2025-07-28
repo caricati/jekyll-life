@@ -34,7 +34,7 @@ tags:
       </figure>
       <div class="details">
         <header>
-          <h2>Ingredientes do arroz carreteiro</h2>
+          <h2 class="heading-underscore">Ingredientes do arroz carreteiro</h2>
         </header>
         <p>Para essa receita, você vai precisar dos seguintes ingredientes:</p>
         <ul>
@@ -62,7 +62,7 @@ tags:
     </header>
     <article class="photo-topics max-width margin-bottom-32">
       <div class="photo-legend">
-        <h2 class="margin-bottom-16">Acampamento</h2>
+        <h2 class="margin-bottom-16 heading-underscore">Acampamento</h2>
         <p>
           Imagine um fim de tarde no acampamento: o som suave dos pássaros, o vento balançando as folhas, o crepitar da lenha queimando devagar. Você está ali, preparando uma refeição simples, mas saborosa, com calma e prazer.
         </p>
@@ -79,7 +79,7 @@ tags:
         <img src="{{ '/assets/uploads/250520/photo02.jpg' | absolute_url}}" loading="lazy" />
       </figure>
       <div class="photo-legend">
-        <h2 class="margin-bottom-16">Fogueira</h2>
+        <h2 class="margin-bottom-16 heading-underscore">Fogueira</h2>
         <p>
           Fazer uma fogueira à noite no acampamento é um daqueles pequenos rituais que aquecem muito mais do que o corpo. Tem algo de ancestral nesse ato: juntar galhos, montar a pilha, acender com cuidado, ver a primeira chama ganhar força. É como se você se reconectasse com algo antigo, essencial.
         </p>
@@ -99,7 +99,7 @@ tags:
       </figure>
       <div class="details">
         <header>
-          <h2>Ingredientes do hambúrguer</h2>
+          <h2 class="heading-underscore">Ingredientes do hambúrguer</h2>
         </header>
         <p>Para essa receita, você vai precisar dos seguintes ingredientes:</p>
         <ul>

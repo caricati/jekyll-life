@@ -131,7 +131,7 @@
 }
 
 .heading {
-  text-align: center;
+  text-align: left;
   margin-bottom: 4.375rem;
 
   h1 {
@@ -195,8 +195,10 @@
     }
   }
 
-  @media (max-width: 500px) {
-    padding-top: 95px;
+  .single-video-container {
+    @media (max-width: 500px) {
+      padding-top: 95px;
+    }
   }
 }
 
@@ -215,7 +217,7 @@
   align-items: center;
   column-gap: 2rem;
 
-  @media screen and (max-width: 660px) {
+  @media screen and (max-width: 800px) {
     grid-template-columns: 1fr;
 
     .photo {
@@ -354,7 +356,12 @@
     max-width: 800px;
     margin: 0 auto;
     box-shadow: 0 0 2rem 1rem rgba(0, 0, 0, 0.5);
+    
+    @media screen and (min-width: 480px) {
+      margin: 0 2rem;
+    }
   }
+
 }
 
 .map {
@@ -736,6 +743,14 @@
       &.arrow-right {
         background-image: url("../img/icons/arrow-right.svg");
       }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    display: block;
+
+    figure {
+      margin-bottom: 2rem;
     }
   }
 }
