@@ -19,7 +19,7 @@ tags:
 highlight: true
 ---
 
-{% include frame-video.html videourl="https://www.youtube.com/embed/lF4jZIMPZwQ?autoplay=1" %}
+{% include first-video-page.html videourl="https://www.youtube.com/embed/lF4jZIMPZwQ?autoplay=1"  %}
 <div>
   <section>
     <header class="heading max-width">

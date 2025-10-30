@@ -82,6 +82,10 @@
   min-height: 100vh;
 }
 
+.full-height-with-header {
+  min-height: calc(100vh - 100px);
+}
+
 img.img-full-cover {
   width: 100%;
   height: 100%;

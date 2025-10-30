@@ -24,7 +24,7 @@ tags:
   - receitas de acampamento
 ---
 
-{% include frame-video.html videourl="https://www.youtube.com/embed/1Yw0sFLhDr4?autoplay=1"  %}
+{% include first-video-page.html videourl="https://www.youtube.com/embed/1Yw0sFLhDr4?autoplay=1"  %}
 
 <div>
   <div class="max-width mt-120">

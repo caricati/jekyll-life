@@ -11,6 +11,7 @@ body {
   color: $text-color;
   font: normal 16px $default-font-family;
   background-color: $body-color;
+  background: url(/assets/img/body.jpg);
 }
 
 ::-moz-selection {

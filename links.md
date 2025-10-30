@@ -5,7 +5,7 @@ permalink: /links
 
 <section id="links">
   <header>
-    <img src="/assets/img/icons/nav/menu.svg" alt="Mr. Caricati" />
+    <img src="/assets/img/logo.png" alt="Mr. Caricati" />
   </header>
   <nav>
     <a href="/">

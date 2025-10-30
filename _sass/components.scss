@@ -177,6 +177,20 @@
   }
 }
 
+.video-toppage {
+  height: calc(100vh - 100px);
+  
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 100px);
+  }
+}
+
 .frame-video-container {
   background-color: $video-bg-color;
 
