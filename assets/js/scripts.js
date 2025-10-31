@@ -135,7 +135,7 @@ $(document).ready(function () {
 
   function closeModal() {
     $("#gallery-modal").remove();
-    document.body.classList.remove('lock-scroll')
+    document.body.classList.remove("lock-scroll");
   }
 
   function setModalImage(src) {
@@ -160,17 +160,17 @@ $(document).ready(function () {
     // prev
     if (isArrowLeft) {
       if (currentIndex === 0) {
-        return setModalImage(arr[arr.length - 1])
+        return setModalImage(arr[arr.length - 1]);
       }
-      return setModalImage(arr[currentIndex - 1])
+      return setModalImage(arr[currentIndex - 1]);
     }
 
     // next
     if (isArrowRight) {
       if (currentIndex === arr.length - 1) {
-        return setModalImage(arr[0])
+        return setModalImage(arr[0]);
       }
-      return setModalImage(arr[currentIndex + 1])
+      return setModalImage(arr[currentIndex + 1]);
     }
   }
 
@@ -202,6 +202,23 @@ $(document).ready(function () {
     event.preventDefault();
     generateModal(this.getAttribute("data-gallery"));
     setModalImage(this.getAttribute("href"));
-    document.body.classList.add('lock-scroll')
+    document.body.classList.add("lock-scroll");
+  });
+
+  const $gototop = $("#goto-top");
+
+  $(window).on("scroll", function (event) {
+    const scrollPosition = $(this).scrollTop();
+    if (scrollPosition >= 800 && !$gototop.is(":visible")) {
+      $gototop.fadeIn(350);
+    }
+
+    if (scrollPosition < 800 && $gototop.is(":visible")) {
+      $gototop.fadeOut(350);
+    }
+  });
+
+  $gototop.children('button').on('click', function() {
+    $(window).scrollTop(0);
   });
 });

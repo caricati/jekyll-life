@@ -103,14 +103,18 @@
 }
 
 .videos-x-list {
-  display: grid;
+  display: flex;
   column-gap: 1.6rem;
   row-gap: 1.6rem;
-  grid-template-columns: repeat(5, 230px);
+  padding: 1rem 0;
 
   .video-item {
+    width: 230px;
+    flex: 0 0 230px;
     overflow: hidden;
     transition: all ease $transition-time;
+    border-radius: 2px;
+    outline: none;
 
     img {
       width: 100%;
@@ -118,15 +122,21 @@
     }
 
     &:hover, &:focus {
-      box-shadow: 0 0 0 4px $primary-color;
-      border-radius: 2px;
-      outline: none;
+      box-shadow: 0 0 16px 10px rgba(0, 0, 0, 0.75);
+      transform: scale(1.01);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 4px $primary-color, 0 0 16px 10px rgba(0, 0, 0, 0.75);
     }
   }
 
-  @media screen and (max-width: $max-width-container) {
+  @media screen and (max-width: 1270px) {
     grid-auto-flow: column;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-x: auto;
+    scrollbar-color: $gray-text-color rgba(0, 0, 0, 0.4);
+    scrollbar-width: thin;
   }
 }
 
