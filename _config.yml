@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: A vida de Mr. Caricati
+title: Mr. Caricati
 email: thales.caricati@gmail.com
 description: >-
-  Missões em locais remotos de difícil acesso, pescaria, construção de ferramentas, customização de motocicletas, motores diesel e 4x4.
+  Faça com Mr. Caricati! Acompanhe viagens remotas, aventudas, acampamentos, pescarias e faça comigo coisas de oficina.
 baseurl: ""
 gallery_path: "/assets/gallery/"
 language: "pt"
@@ -43,10 +43,13 @@ keywords:
   - Diesel
   - Duas rodas
   - Mecânica
+  - Solda
+  - Marcenaria
   - Oficina
   - Pescaria
   - v2
   - Moto custom
+  - Gameplay
 url: "https://mrcaricati.com"
 twitter_username: mrcaricati
 github_username: caricati

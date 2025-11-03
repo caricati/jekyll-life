@@ -1,0 +1,72 @@
+.btn-skew {
+  color: $body-color;
+  font-size: 0.75rem;
+  position: relative;
+  font-family: $default-font-family;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px 6px;
+  cursor: pointer;
+  background: transparent;
+  transform: skewX(-15deg);
+  background-color: $white-color;
+  box-shadow: 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  border: none;
+  appearance: none;
+  transition: ease all $transition-time;
+
+  &.animete-hover-icon-right svg {
+    transform: translate(0, 1px);
+    transition: ease $transition-time transform;
+  }
+
+  &.animete-hover-icon-right:hover svg {
+    transform: translate(0.25rem, 1px);
+  }
+
+  &.large {
+    font-size: 1rem;
+    padding: 14px 1.5rem 8px;
+  }
+
+  &:active {
+    transform: skewX(-15deg) translate(0.25rem, 0.25rem);
+    box-shadow: none !important;
+  }
+
+
+  &:hover {
+    color: $white-color;
+    text-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.7);
+    box-shadow: 0.75rem 0.75rem 0 rgba(0, 0, 0, 0.7);
+
+    &::after {
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+  span {
+    font-weight: bold;
+    transform: skewX(15deg);
+    display: block;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: $primary-color;
+    top: 0;
+    left: -100%;
+    opacity: 0;
+    transition: all ease-in-out $transition-time;
+    z-index: -1;
+  }
+}

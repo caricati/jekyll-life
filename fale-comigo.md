@@ -26,7 +26,7 @@ tags:
         <span data-counter-from="#message">0</span>/<span>2048</span>
       </p>
       <div class="flex-space-between">
-        <button type="submit" id="send-contact" class="btn primary">
+        <button type="submit" id="send-contact" class="btn-skew">
           <span>Enviar</span>
         </button>
       </div>

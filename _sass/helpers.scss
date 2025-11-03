@@ -54,6 +54,12 @@
   overflow: hidden;
 }
 
+.tire-track-line {
+  height: 3.125rem;
+  background: url('/assets/img/tire-track.png') repeat top left;
+  background-size: 200px;
+}
+
 .overlay {
   position: fixed;
   top: 0;

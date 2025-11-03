@@ -18,8 +18,8 @@
   </head>
   <body>
     <main>
-      {% include header.html %}
-      {% include first-video-page.html videourl=page.videoUrl  %}
+      {% include header.html %} {% include first-video-page.html
+      videourl=page.videoUrl %}
       <div id="gameplay" class="max-width">
         <header class="heading">
           <h1>{{ page.title }}</h1>
@@ -54,6 +54,36 @@
               da guerra. O jogo leva os jogadores a viver batalhas épicas em
               locais históricos, como as trincheiras do Ocidente, as montanhas
               da Itália e os desertos da Arábia.
+            </p>
+          </div>
+          {% endif %} {% if page.game == 'thesaboteur' %}
+          <figure class="game-info-thumb">
+            <img
+              src="{{'assets/img/games/thumb/thesaboteur.jpg' | absolute_url}}"
+              alt="Battlefield 1"
+            />
+          </figure>
+          <div>
+            <h2>The Saboteur</h2>
+            <div class="tags">
+              <span>Aventura</span>
+              <span>FPS</span>
+              <span>Mundo aberto</span>
+              <span>Segunda guerra mundial</span>
+            </div>
+            <p>
+              The Saboteur é um jogo de ação e aventura lançado em 2009 pela
+              Pandemic Studios e publicado pela Electronic Arts. Ambientado na
+              França ocupada durante a Segunda Guerra Mundial, o jogador
+              controla Sean Devlin, um mecânico e corredor irlandês que se junta
+              à Resistência Francesa para sabotar o exército nazista.
+            </p>
+            <p>
+              O jogo combina exploração em mundo aberto, combate e furtividade.
+              Um elemento visual marcante é o uso de cores: áreas sob controle
+              nazista aparecem em preto e branco, enquanto regiões libertadas
+              ganham cor. A jogabilidade envolve infiltrações, destruição de
+              alvos inimigos e escalada de edifícios, incluindo a Torre Eiffel.
             </p>
           </div>
           {% endif %} {% if page.game == 'scum' %}
