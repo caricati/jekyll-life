@@ -27,8 +27,9 @@
           <p>{{ page.description }}</p>
           {% endif %}
         </header>
-        {{ content }}
-
+        <div class="text-content">
+          {{ content }}
+        </div>
         <section class="game-info">
           {% if page.game == 'battlefield1' %}
           <figure class="game-info-thumb">

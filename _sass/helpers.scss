@@ -84,6 +84,22 @@
   }
 }
 
+.text-content {
+  margin-bottom: 3rem;
+
+  ul, ol {
+    margin-left: 1rem;
+  }
+
+  h2, h3, h4, h5, h6 {
+    margin-top: 2rem;
+  }
+
+  h2, h3, h4, h5, h6, p, ol, ul, p {
+    margin-bottom: 1rem;
+  }
+}
+
 .full-height {
   min-height: 100vh;
 }
