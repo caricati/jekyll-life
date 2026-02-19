@@ -87,13 +87,13 @@
     width: 100%;
     position: absolute;
     top: 100%;
-    background-image: $header-line-color;
+    background: $primary-color;
   }
 
   .logo-link {
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 0.5rem;
     z-index: 100;
     transform: translateX(-50%);
     transition: ease 300ms transform;

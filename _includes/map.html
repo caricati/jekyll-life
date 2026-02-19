@@ -1,7 +1,7 @@
-<section id="{{ include.id }}" class="map"></section>
+<div id="{{ include.id }}" class="map"></div>
 
 <script type="text/javascript">
   $(document).ready(function() {
-    loadMap("{{ include.id }}", {{ include.cords }}, {{ include.zoom }}, {{ include.pin }});
-  })  
+    mapLibre("{{ include.id }}", {{ include.cords }}, {{ include.zoom }}, "{{ include.markers }}");
+  })
 </script>

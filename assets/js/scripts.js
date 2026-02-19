@@ -45,6 +45,68 @@ $(document).ready(function () {
   $("#float-menu-nav a").on("click", closeNav);
 });
 
+function mapLibre(id, center, zoom, _markers) {
+  const markers = _markers.split(',').filter(item => !!item).map(config => {
+    const data = config.split('|')
+    return [[data[0], data[1]], data[2] || '']
+  })
+  console.log(markers)
+  const pinImg = new Image(38, 45);
+  pinImg.setAttribute('src', '/assets/img/icons/pin.svg');
+
+  const map = new maplibregl.Map({
+    container: id,
+    zoom: zoom,
+    center: center,
+    style: {
+      version: 8,
+      sources: {
+        'esri-satellite': {
+          type: 'raster',
+          tiles: [
+            'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
+          ],
+          tileSize: 256,
+          attribution: 'Esri'
+        }
+      },
+      layers: [
+        {
+          id: 'esri-satellite-layer',
+          type: 'raster',
+          source: 'esri-satellite'
+        }
+      ]
+    },
+  });
+
+  map.scrollZoom.disable();
+
+  map.addControl(new maplibregl.NavigationControl({
+      visualizePitch: true,
+      showZoom: true,
+      showCompass: true
+  }), 'top-right');
+
+  map.on('click', (e) => {
+    console.log(`lng/lat: [${e.lngLat.lng}, ${e.lngLat.lat}]`);
+  });
+
+  if (Array.isArray(markers)) {
+    markers.forEach(([cords, label]) => {
+      const marker = new maplibregl.Marker({
+        element: pinImg.cloneNode(),
+        anchor: 'bottom'
+      })
+      .setLngLat(cords)
+      .addTo(map);
+
+      const popup = new maplibregl.Popup({ offset: 25 }).setHTML(`<p>${label}</p>`);
+      marker.setPopup(popup);
+    })
+  }
+}
+
 function loadMap(id, cords, zoom, pins) {
   var map = L.map(id).setView(cords, zoom || 13);
   map.scrollWheelZoom.disable();

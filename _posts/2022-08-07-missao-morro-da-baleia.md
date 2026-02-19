@@ -69,7 +69,7 @@ highlight: true
       </figure>
     </article>
   </section>
-  {% include map.html id="map2" cords="[-14.131939, -47.661352]" zoom="15" pin="[{ cords: [-14.128431, -47.660065], tooltip: 'Morro da Baleia' }, { cords: [-14.136072, -47.662307], tooltip: 'Acampamento' }]"  %}
+  {% include map.html id="map2" cords="[-47.663673517762135, -14.133676381549122]" zoom="15" markers="-47.66531502968053|-14.129829773047561|Morro da baleia,-47.66239142185577|-14.135779455013022|Camping"  %}
   <div class="road-timeline max-width mb-120 mt-120">
     <div class="street">
       <div class="moto vehicle"></div>

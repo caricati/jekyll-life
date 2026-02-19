@@ -123,3 +123,29 @@ p {
   margin-bottom: 1rem;
   line-height: 1.6;
 }
+
+/* RESET MAP */
+.maplibregl-popup-content {
+  color: $text-color;
+  background: $body-color;
+  
+  .maplibregl-popup-close-button {
+    color: $text-color;
+    padding: 4px 6px;
+    font-size: 1rem;
+    outline: none;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.875rem;
+  }
+}
+
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip {
+  border-top-color: $body-color;
+}
+
+.maplibregl-popup {
+  margin-top: -1.25rem;
+}

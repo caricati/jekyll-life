@@ -106,7 +106,7 @@
   display: flex;
   column-gap: 1.6rem;
   row-gap: 1.6rem;
-  padding: 1rem 0;
+  padding: 1rem 0.5rem;
   overflow-x: auto;
   scrollbar-color: $gray-text-color rgba(0, 0, 0, 0.4);
   scrollbar-width: thin;
@@ -125,7 +125,6 @@
     }
 
     &:hover, &:focus {
-      box-shadow: 0 0 16px 10px rgba(0, 0, 0, 0.5);
       transform: scale(1.01);
     }
 
