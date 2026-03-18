@@ -66,6 +66,6 @@ permalink: /links
     -->
   </nav>
   <footer>
-    <small>© 2025 Todos os direitos reservados.</small>
+    <small>© 2026 Todos os direitos reservados.</small>
   </footer>
 </section>
