@@ -32,7 +32,7 @@ tags:
     </header>
     <article class="photo-topics max-width margin-bottom-32">
       <figure class="photo">
-        <img src="{{ '/assets/uploads/260409/snorkel.png' | absolute_url}}" loading="lazy" />
+        <img src="{{ '/assets/uploads/260409/snorkel.png' | absolute_url}}" loading="lazy" alt="Carro com snorkel" />
       </figure>
       <div class="photo-legend">
         <h2 class="margin-bottom-16 heading-underscore">Vantágens do snorkel</h2>
@@ -57,12 +57,12 @@ tags:
         {% include button-buy-affiliate.html url="https://meli.la/1DpBP1n" name="milhas de capô" %}
       </div>
       <figure class="photo">
-        <img src="{{ '/assets/uploads/260409/iluminacao.png' | absolute_url}}" loading="lazy" />
+        <img src="{{ '/assets/uploads/260409/iluminacao.png' | absolute_url}}" loading="lazy" alt="Milha de capô no carro" />
       </figure>
     </article>
     <article class="photo-topics max-width margin-bottom-32">
       <figure class="photo">
-        <img src="{{ '/assets/uploads/260409/painel-solar.png' | absolute_url}}" loading="lazy" />
+        <img src="{{ '/assets/uploads/260409/painel-solar.png' | absolute_url}}" loading="lazy" alt="Painel solar" />
       </figure>
       <div class="photo-legend">
         <h2 class="margin-bottom-16 heading-underscore">Off Grid</h2>
@@ -88,7 +88,7 @@ tags:
         {% include button-buy-affiliate.html url="https://meli.la/1fpyUYB" name="rádio RP-50" %}
       </div>
       <figure class="photo">
-        <img src="{{ '/assets/uploads/260409/radiopx.png' | absolute_url}}" loading="lazy" />
+        <img src="{{ '/assets/uploads/260409/radiopx.png' | absolute_url}}" loading="lazy" alt="Rádio PX RP-50" />
       </figure>
     </article>
   </section>
