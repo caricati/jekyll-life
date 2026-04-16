@@ -20,7 +20,7 @@ tags:
   - movie
 ---
 
-{% include first-video-page.html videourl="https://www.youtube.com/embed/-ILLi2Wh9Eg?autoplay=1"  %}
+{% include first-video-page.html videourl="https://www.youtube.com/embed/-ILLi2Wh9Eg?autoplay=0"  %}
 
 <div>
   <section>
@@ -42,6 +42,7 @@ tags:
         <p>
           Como o ar é captado na parte superior, ele é muito mais limpo e livre de partículas pesadas. Isso evita que o filtro de ar fique saturado rapidamente, mantendo o fluxo de oxigênio ideal para a queima do combustível. Motores a combustão (especialmente os Turbo Diesel) performam melhor com ar frio, que é mais denso e rico em oxigênio. Ao captar o ar externo em uma posição elevada e ventilada, o snorkel ajuda a manter a eficiência térmica do sistema de admissão.
         </p>
+        {% include button-buy-affiliate.html url="https://meli.la/2UoRu3V" name="snorkel" %}
       </div>
     </article>
     <article class="photo-topics max-width margin-bottom-32">
@@ -50,7 +51,10 @@ tags:
         <p>
           Quando o sol se põe e você está no meio do nada, a luz original do carro — projetada apenas para frente e para o asfalto — se torna insuficiente para as demandas de um acampamento ou de uma trilha técnica. Em trilhas estreitas, você raramente dirige apenas para frente. Muitas vezes é preciso dar ré ou manobrar entre árvores e pedras. Luzes instaladas nas laterais eliminam os pontos cegos. Você consegue enxergar valetas, galhos baixos ou pedras cortantes que estariam escondidos na escuridão ao lado das portas.
         </p>
-        <p>Em situações de resgate ou quando o grupo precisa se reunir na trilha, a iluminação periférica serve como um excelente sinalizador de posição. Facilita para que outros membros da expedição localizem seu veículo em áreas de vegetação densa ou poeira alta, aumentando a segurança coletiva.</p>
+        <p>
+          Em situações de resgate ou quando o grupo precisa se reunir na trilha, a iluminação periférica serve como um excelente sinalizador de posição. Facilita para que outros membros da expedição localizem seu veículo em áreas de vegetação densa ou poeira alta, aumentando a segurança coletiva.
+        </p>
+        {% include button-buy-affiliate.html url="https://meli.la/1DpBP1n" name="milhas de capô" %}
       </div>
       <figure class="photo">
         <img src="{{ '/assets/uploads/260409/iluminacao.png' | absolute_url}}" loading="lazy" />
@@ -68,6 +72,8 @@ tags:
         <p>
           Sem energia solar, você depende exclusivamente da bateria do carro. Com o painel solar, você mantém a geladeira ligada 24h por dia, garantindo alimentos frescos e bebidas geladas sem o medo de encontrar a bateria morta na manhã seguinte. O painel solar atua mantendo a bateria sempre no pico de carga. Mesmo que você use luzes internas ou carregue notebooks, o sol repõe essa energia durante o dia, evitando ciclos de descarga profunda que reduzem drasticamente a vida útil das baterias automotivas.
         </p>
+        {% include button-buy-affiliate.html url="https://meli.la/1rc5jAX" name="placa + controlador" %}
+        {% include button-buy-affiliate.html url="https://meli.la/1coR7oa" name="bateria" %}
       </div>
     </article>
     <article class="photo-topics max-width margin-bottom-32">
@@ -79,6 +85,7 @@ tags:
         <p>
           Diferente dos rádios antigos que eram enormes, o RP 50 é muito pequeno. Isso facilita muito a instalação no painel da Frontier sem atrapalhar a ergonomia ou a estética do interior. Ele possui os controles essenciais (volume, squelch e seletor de canais) de forma muito intuitiva. Em uma trilha tremida, você não quer um rádio cheio de menus complexos; você quer algo que funcione rápido.
         </p>
+        {% include button-buy-affiliate.html url="https://meli.la/1fpyUYB" name="rádio RP-50" %}
       </div>
       <figure class="photo">
         <img src="{{ '/assets/uploads/260409/radiopx.png' | absolute_url}}" loading="lazy" />

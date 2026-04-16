@@ -70,3 +70,24 @@
     z-index: -1;
   }
 }
+
+.button-affiliate {
+  color: $white-color;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+
+  .icon-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid $body-color;
+    padding: 0 0.5rem;
+  }
+
+  .button-text {
+    padding: 0.125rem 0.75rem 0 0.5rem;
+  }
+}
