@@ -42,7 +42,7 @@
       <section class="padding-top-72 padding-bottom-72 bg-contrast">
         {% assign movies = site.posts | where_exp: "item", "item.tags contains
         'movie'" %} {% if movies.size > 0 %}
-        <div class="max-width videos-x-list mb-72">
+        <div class="max-width videos-grid-list mb-72">
           {% for post in movies %}
           <a class="video-item" href="{{ post.url }}">
             <figure>

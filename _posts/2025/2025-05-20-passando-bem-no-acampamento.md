@@ -6,7 +6,7 @@ published: true
 layout: single
 pitchUrl: /assets/uploads/250520/pitch.jpg
 thumbUrl: /assets/uploads/250520/thumb-v.jpg
-categories: acampamento
+categories: comidas
 highlight: true
 tags:
   - roadtrip
