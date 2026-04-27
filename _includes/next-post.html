@@ -1,0 +1,22 @@
+{% assign selected_post = site.posts | where: "slug", include.slug | first %}
+{% if selected_post %}
+<div class="next-post">
+  <div class="next-post-inner">
+    <figure class="photo">
+      <a href="{{ selected_post.url }}">
+        <img src="{{ selected_post.thumbUrl | absolute_url }}" loading="lazy" alt="{{ selected_post.title }}" />
+      </a>
+    </figure>
+    <div>
+      <h2>
+        <a href="{{ selected_post.url }}">
+          {{ selected_post.title }}
+        </a>
+      </h2>
+      <a class="btn-skew large animete-hover-icon-right" href="{{ selected_post.url }}">
+        Acompanhar
+      </a>
+    </div>
+  </div>
+</div>
+{% endif %}

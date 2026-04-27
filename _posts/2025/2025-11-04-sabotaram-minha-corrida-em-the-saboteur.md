@@ -4,7 +4,7 @@ description: Sean Devlin participa de um grande prêmio em Saarbrücken, corrend
 date: 2025-10-11
 layout: single-gameplay
 pitchUrl: /assets/img/games/thumb/thesaboteur-pitch.jpg
-thumbUrl: /assets/uploads/251103/thumb-v.jpg
+thumbUrl: /assets/uploads/25/1103/thumb-v.jpg
 categories: gameplay
 videoUrl: https://www.youtube.com/embed/BdFoUYovYTU?autoplay=1
 game: thesaboteur

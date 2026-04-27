@@ -305,10 +305,16 @@ img.img-full-cover {
 
 h1.pitch-heading {
   font-size: 4rem;
-  line-height: 1.2;
+  line-height: 1.12;
   text-shadow: 5px 5px 16px rgba(0, 0, 0, 0.3);
   font-weight: normal;
   max-width: 980px;
+
+  & > span {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0 1rem;
+  }
 
   @media screen and (max-width: 700px) {
     font-size: 3.5rem;

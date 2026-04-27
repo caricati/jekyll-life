@@ -4,8 +4,8 @@ description: É tempo de chuva no centro-oeste, com ela o deserto do Cerrado se 
 date: 2025-05-20
 published: true
 layout: single
-pitchUrl: /assets/uploads/250520/pitch.jpg
-thumbUrl: /assets/uploads/250520/thumb-v.jpg
+pitchUrl: /assets/uploads/25/0520/pitch.jpg
+thumbUrl: /assets/uploads/25/0520/thumb-v.jpg
 categories: comidas
 highlight: true
 tags:
@@ -30,7 +30,7 @@ tags:
   <div class="max-width mt-120">
     <article class="hiking-details mb-72">
       <figure>
-        <img src="{{ '/assets/uploads/250520/photo-arroz-carreteiro.jpg' | absolute_url}}" loading="lazy" alt="Arroz Carreteiro" />
+        <img src="{{ '/assets/uploads/25/0520/photo-arroz-carreteiro.jpg' | absolute_url}}" loading="lazy" alt="Arroz Carreteiro" />
       </figure>
       <div class="details">
         <header>
@@ -71,12 +71,12 @@ tags:
         </p>
       </div>
       <figure class="photo">
-        <img src="{{ '/assets/uploads/250520/photo01.jpg' | absolute_url}}" loading="lazy" />
+        <img src="{{ '/assets/uploads/25/0520/photo01.jpg' | absolute_url}}" loading="lazy" />
       </figure>
     </article>
     <article class="photo-topics max-width margin-bottom-120">
       <figure class="photo">
-        <img src="{{ '/assets/uploads/250520/photo02.jpg' | absolute_url}}" loading="lazy" />
+        <img src="{{ '/assets/uploads/25/0520/photo02.jpg' | absolute_url}}" loading="lazy" />
       </figure>
       <div class="photo-legend">
         <h2 class="margin-bottom-16 heading-underscore">Fogueira</h2>
@@ -95,7 +95,7 @@ tags:
   <div class="max-width mt-120">
     <article class="hiking-details mb-72">
       <figure>
-        <img src="{{ '/assets/uploads/250520/photo-hamburguer.jpg' | absolute_url}}" loading="lazy" alt="Hamburguer na brasa" />
+        <img src="{{ '/assets/uploads/25/0520/photo-hamburguer.jpg' | absolute_url}}" loading="lazy" alt="Hamburguer na brasa" />
       </figure>
       <div class="details">
         <header>

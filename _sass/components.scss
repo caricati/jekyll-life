@@ -419,6 +419,79 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.next-post {
+  padding: 2rem 0;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  .next-post-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    column-gap: 3rem;
+    align-items: center;
+
+    figure {
+      a {
+        display: block;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    h2 {
+      font-size: 2.25rem;
+      margin-bottom: 2rem;
+
+      a {
+        color: $white-color;
+      }
+    }
+
+    @media screen and (max-width: 840px) {
+      margin: 0 2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 120px 1fr;
+      column-gap: 1.5rem;
+
+      h2 {
+        font-size: 1.75rem;
+        margin: 0;
+      }
+
+      .btn-skew {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 550px) {
+      margin: 0 1rem;
+    }
+
+    @media screen and (max-width: 420px) {
+      display: block;
+
+      .photo {
+        max-width: 230px;
+      }
+
+      h2 {
+        margin: 1rem 0;
+      }
+
+      .btn-skew {
+        display: inline-block;
+      }
+    }
+  }
+
+  
+}
+
 .road-timeline {
   position: relative;
   padding: 150px 0 100px;
