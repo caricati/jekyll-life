@@ -616,6 +616,7 @@
       h3 {
         font-size: 1.75rem;
         margin-bottom: 8px;
+        display: inline-block;
       }
 
       .infos {
@@ -863,7 +864,7 @@
         background-image: url("../img/icons/date.svg");
       }
 
-      &.arrow-right {
+      &.arrow-right, &.arrow {
         background-image: url("../img/icons/arrow-right.svg");
       }
     }
