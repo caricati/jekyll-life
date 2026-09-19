@@ -214,16 +214,15 @@
 }
 
 .video-toppage {
-  height: calc(100vh - 100px);
+  height: 100vh;
   
   iframe,
   object,
   embed {
     position: absolute;
-    top: 100px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: 100vh;
   }
 }
 
