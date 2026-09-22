@@ -3,8 +3,8 @@ title: Fabricando a tela de proteção no projeto overlander
 description: Neste vídeo vamos mostrar o processo de fabricação de tela para o rack de caçamba do projeto overlander
 date: 2024-09-24
 layout: single
-pitchUrl: /assets/uploads/240924/pitch.jpg
-thumbUrl: /assets/uploads/240924/thumb-v.jpg
+pitchUrl: /assets/uploads/24/0924/pitch.jpg
+thumbUrl: /assets/uploads/24/0924/thumb-v.jpg
 categories:
   - oficina
 tags: 
@@ -30,7 +30,7 @@ highlight: true
     </header>
     <article class="photo-topics max-width margin-bottom-32">
       <figure class="photo">
-        <img src="{{ '/assets/uploads/240924/parafusos-m6.jpg' | absolute_url}}" />
+        <img src="{{ '/assets/uploads/24/0924/parafusos-m6.jpg' | absolute_url}}" />
       </figure>
       <div class="photo-legend">
         <h2 class="margin-bottom-16 heading-underscore">Parafusos</h2>
@@ -54,7 +54,7 @@ highlight: true
         </p>
       </div>
       <figure class="photo">
-        <img src="{{ '/assets/uploads/240924/rebites-m6.jpg' | absolute_url}}" />
+        <img src="{{ '/assets/uploads/24/0924/rebites-m6.jpg' | absolute_url}}" />
       </figure>
     </article>
   </section>

@@ -4,7 +4,7 @@ description: Nessa gameplay, vamos explorar um pouco mais do mapa do Scum e tent
 date: 2024-10-11
 layout: single-gameplay
 pitchUrl: /assets/img/games/thumb/scum-pitch.jpg
-thumbUrl: /assets/uploads/241011/thumb-v.jpg
+thumbUrl: /assets/uploads/24/1011/thumb-v.jpg
 categories: gameplay
 videoUrl: https://www.youtube.com/embed/hKDwYEVV_HE?autoplay=1
 game: scum

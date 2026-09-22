@@ -1,3 +1,15 @@
+.tag {
+  background-color: $primary-color;
+  font-weight: bold;
+  display: inline-block;
+  padding: 8px 8px 3px 8px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  color: $white-color;
+  border-radius: 2px;
+}
+
 .modal {
   margin: 2rem auto;
   padding: 20px;
@@ -118,6 +130,19 @@
     transition: all ease $transition-time;
     border-radius: 2px;
     outline: none;
+    position: relative;
+
+    figure::after {
+      width: 75%;
+      height: 75%;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: url('../img/glass-photo.svg') no-repeat top right;
+      background-size: contain;
+      z-index: 5;
+    }
 
     img {
       width: 100%;
@@ -149,6 +174,19 @@
     transition: all ease $transition-time;
     border-radius: 2px;
     outline: none;
+    position: relative;
+
+    figure::after {
+      width: 75%;
+      height: 75%;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: url('../img/glass-photo.svg') no-repeat top right;
+      background-size: contain;
+      z-index: 5;
+    }
 
     img {
       width: 100%;
@@ -182,7 +220,7 @@
 .ig-thumbs {
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 
   a {
     position: relative;
@@ -874,6 +912,91 @@
 
     figure {
       margin-bottom: 2rem;
+    }
+  }
+}
+
+.post-featured {
+  background-color: $modal-bg-color;
+  align-items: stretch;
+  position: relative;
+  box-shadow: 0 8px 8px 10px rgba(0, 0, 0, 0.15);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc((100% - 1250px) / 2);
+    height: 100%;
+    background: rgba(13, 13, 14, 0.75);
+    z-index: 6;
+
+    @media screen and (max-width: $max-width-container) {
+      width: 2rem;
+    }
+
+    @media screen and (max-width: 550px) {
+      width: 1rem;
+    }
+  }
+
+  .feature-figure-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+
+    &::after {
+      width: 50%;
+      height: 50%;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: url('../img/glass-photo.svg') no-repeat top right;
+      background-size: contain;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .feature-description {
+    max-width: 800px;
+    height: 100%;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    position: relative;
+    z-index: 10;
+    background: linear-gradient(
+      90deg, rgba(13, 13, 14, 0.75) 0%,
+      rgba(13, 13, 14, 0.5) 75%,
+      rgba(13, 13, 14, 0) 100%
+    );
+
+    & > div {
+      padding: 8rem 0;
+    }
+
+    h1 {
+      font-size: 4rem;
+      color: $white-color;
+      margin-bottom: 1rem;
+      line-height: 1.15;
+
+      @media screen and (max-width: 370px) {
+        font-size: 2rem;
+      }
     }
   }
 }

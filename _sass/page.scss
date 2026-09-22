@@ -1,0 +1,14 @@
+#page {
+  background-color: $box-contrast-color;
+  margin-bottom: 4rem;
+  min-height: 100vh;
+  padding: 11.25rem 2rem 6rem;
+  box-sizing: border-box;
+
+  .page-content {
+    width: 860px;
+    h1 {
+      margin-bottom: 2rem;
+    }
+  }
+}

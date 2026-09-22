@@ -3,8 +3,8 @@ title: Missão Cerrado no morro da baleia
 description: Tivemos a missão se subir o borro da baleia, um dos cartões postais localizados na Chapada dos Veadeiros.
 date: 2022-08-07
 layout: single
-pitchUrl: /assets/uploads/220807/pitch.jpg
-thumbUrl: /assets/uploads/220807/thumb-v.jpg
+pitchUrl: /assets/uploads/22/0807/pitch.jpg
+thumbUrl: /assets/uploads/22/0807/thumb-v.jpg
 categories:
   - outdoor
 tags: 
@@ -31,7 +31,7 @@ highlight: true
     </header>
     <article class="photo-topics max-width margin-bottom-32">
       <figure class="photo">
-        <img src="{{ '/assets/uploads/220807/20220808_145120.jpg' | absolute_url}}" />
+        <img src="{{ '/assets/uploads/22/0807/20220808_145120.jpg' | absolute_url}}" />
       </figure>
       <div class="photo-legend">
         <h2 class="margin-bottom-16 heading-underscore">Os motokas</h2>
@@ -65,7 +65,7 @@ highlight: true
         </p>
       </div>
       <figure class="photo">
-        <img src="{{ '/assets/uploads/220807/20220808_175120.png' | absolute_url}}" />
+        <img src="{{ '/assets/uploads/22/0807/20220808_175120.png' | absolute_url}}" />
       </figure>
     </article>
   </section>
@@ -78,7 +78,7 @@ highlight: true
       <div class="transit-board begin"><span>Início</span></div>
       <article>
         <figure class="photo">
-          <img src="{{ '/assets/uploads/220807/photo1.jpg' | absolute_url}}" />
+          <img src="{{ '/assets/uploads/22/0807/photo1.jpg' | absolute_url}}" />
         </figure>
         <div class="text">
           <h3>Tanque cheio</h3>
@@ -94,7 +94,7 @@ highlight: true
       </article>
       <article>
         <figure class="photo">
-          <img src="{{ '/assets/uploads/220807/photo2.png' | absolute_url}}" />
+          <img src="{{ '/assets/uploads/22/0807/photo2.png' | absolute_url}}" />
         </figure>
         <div class="text">
           <h3>O rango</h3>
@@ -115,7 +115,7 @@ highlight: true
       </article>
       <article>
         <figure class="photo">
-          <img src="{{ '/assets/uploads/220807/photo3.jpg' | absolute_url}}" />
+          <img src="{{ '/assets/uploads/22/0807/photo3.jpg' | absolute_url}}" />
         </figure>
         <div class="text">
           <h3>Acampamento instalado</h3>
@@ -139,7 +139,7 @@ highlight: true
       </article>
       <article>
         <figure class="photo">
-          <img src="{{ '/assets/uploads/220807/photo4.jpg' | absolute_url}}" />
+          <img src="{{ '/assets/uploads/22/0807/photo4.jpg' | absolute_url}}" />
         </figure>
         <div class="text">
           <h3>Reabastecendo a dispensa</h3>
@@ -160,7 +160,7 @@ highlight: true
       </article>
       <article>
         <figure class="photo">
-          <img src="{{ '/assets/uploads/220807/photo5.jpg' | absolute_url}}" />
+          <img src="{{ '/assets/uploads/22/0807/photo5.jpg' | absolute_url}}" />
         </figure>
         <div class="text">
           <h3>Hora da subida</h3>

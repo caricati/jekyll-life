@@ -1,8 +1,10 @@
 #header {
   width: 694px;
-  height: 68px;
-  background: url('../img/header-bg.svg') no-repeat top center;
-  position: absolute;
+  height: 80px;
+  background: url('../img/header-bg.svg') no-repeat;
+  background-position: center 0;
+  position: fixed;
+  top: -16px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1001;
@@ -21,7 +23,7 @@
     font-size: 14px;
     text-transform: uppercase;
     font-family: $default-font-family;
-    padding-top: 20px;
+    padding-top: 30px;
     letter-spacing: 0.05rem;
 
     &:first-child {
@@ -35,15 +37,15 @@
       text-transform: uppercase;
       transition: 0.3s ease-in-out;
       margin: 0 0.5rem;
-      padding: 0.625rem 0.75rem;
+      padding: 0.625rem 0.25rem;
 
       &:hover {
         color: $white-color;
-        text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+        text-shadow: 0 0 8px rgba(255, 145, 0, 0.75);
       }
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 550px) {
       display: none;
     }
   }
@@ -52,15 +54,15 @@
     position: absolute;
     left: 50%;
     z-index: 100;
-    transform: translateX(-50%) translateY(-0.5rem);
-    transition: ease 300ms transform;
+    transform: translateX(-50%) translateY(0.625rem);
+    transition: ease 600ms transform;
 
     img {
       width: 120px;
     }
 
     &:hover {
-      transform: translateX(-50%) scale(1.05) translateY(-0.5rem);
+      transform: translateX(-50%) scale(1.05) translateY(0.625rem);
     }
   }
 

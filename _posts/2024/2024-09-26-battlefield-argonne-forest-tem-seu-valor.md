@@ -4,7 +4,7 @@ description: Nada melhor que uma partida de Battlefield 1 jogando no mapa Argonn
 date: 2024-09-26
 layout: single-gameplay
 pitchUrl: /assets/img/games/thumb/battlefield1-pitch.jpg
-thumbUrl: /assets/uploads/240926/thumb-v.jpg
+thumbUrl: /assets/uploads/24/0926/thumb-v.jpg
 categories: gameplay
 videoUrl: https://www.youtube.com/embed/p0mZfGQWy9Y?autoplay=1
 game: battlefield1

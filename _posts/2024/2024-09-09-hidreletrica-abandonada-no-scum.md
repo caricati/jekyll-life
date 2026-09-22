@@ -4,7 +4,7 @@ description: Nessa gameplay em uma hidrelétrica abandonada, eu exploro um ambie
 date: 2024-09-09
 layout: single-gameplay
 pitchUrl: /assets/img/games/thumb/scum-pitch.jpg
-thumbUrl: /assets/uploads/240909/thumb-v.jpg
+thumbUrl: /assets/uploads/24/0909/thumb-v.jpg
 categories: gameplay
 videoUrl: https://www.youtube.com/embed/6ua3XkcbW-M?autoplay=1
 game: scum

@@ -1,6 +1,6 @@
 ---
 title: Caminho das pontes Seca extrema
-description: Vem comigo em um dia inesquecível de ecoturismo no interior de Goiás! Vou te mostrar como foi a nossa jornada pelas trilhas do Cerrado até a paradisíaca Cachoeira Véu de Noiva e a conquista do topo do Salto do Itiquira. Acompanhe a aventura com minha cachorrinha, dicas para a trilha, imagens aéreas de drone e como preparei um almoço delicioso e prático direto no carro. Se você ama natureza e viagens, não pode perder!
+description: Uma expedição solo e inóspita rumo ao coração do Cerrado brasileiro. Enfrentando a puaca das estradas de terra, a jornada é surpreendida por uma chuva rara em pleno mês de setembro, registrando  paisagens incríveis.
 date: 2026-09-16
 published: true
 layout: single
@@ -8,19 +8,24 @@ pitchUrl: /assets/uploads/26/0916/cover.jpg
 thumbUrl: /assets/uploads/26/0916/thumb-v.png
 categories: outdoor
 highlight: true
-tags: 
-  - offroad
-  - outdoor
-  - camping
-  - acampamento
+tags:
   - asmr
-  - cachorro
-  - pet
-  - goias
-  - chapada dos veadeiros
-  - 4x4
-  - overland
+  - cerrado
   - ecoturismo
+  - overland
+  - nissan frontier
+  - off road brasil
+  - acampamento selvagem
+  - bushcraft brasil
+  - chuva no acampamento
+  - comida de acampamento
+  - churrasco na brasa
+  - cortando lenha motosserra
+  - camping com cachorro
+  - drone natureza
+  - mr caricati
+  - sons da natureza sem fala
+  - 4x4 na lama
   - movie
 ---
 
