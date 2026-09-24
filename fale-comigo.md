@@ -38,52 +38,50 @@ tags:
 
 <script src="https://www.google.com/recaptcha/api.js?render=6Lfuv8wtAAAAAEVNQDpLye8OvL3QHtjMBgRNiPDr"></script>
 <script type="text/javascript">
-  document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    var form = this;
-    
-    grecaptcha.ready(function() {
-      grecaptcha.execute('6Lfuv8wtAAAAAEVNQDpLye8OvL3QHtjMBgRNiPDr', {action: 'submit'}).then(function(token) {
-        var input = document.createElement('input');
-        input.type = 'hidden';
-        input.name = 'g-recaptcha-response';
-        input.value = token;
-        form.appendChild(input);
-        
-        // Envia o formulário
-        form.submit();
+  $(document).ready(function() {
+    var loading = false;
+
+    $('#contact-form').on('submit', function(event) {
+      event.preventDefault();
+
+      if (loading) return;
+      loading = true;
+
+      var submitValue = $('#send-contact').html();
+      $('#send-contact').html('<span>enviando...</span>');
+
+      // Executa a validação do reCAPTCHA v3
+      grecaptcha.ready(function() {
+        grecaptcha.execute('6Lfuv8wtAAAAAEVNQDpLye8OvL3QHtjMBgRNiPDr', { action: 'submit' }).then(function(token) {
+          var values = {
+            name: $('#name').val(),
+            contact: $('#contact').val(),
+            message: $('#message').val(),
+            'g-recaptcha-response': token
+          };
+
+          sendMessage(values, function(res) {
+            $('#send-contact').html(submitValue);
+            loading = false;
+
+            if (res && res.ok) {
+              $('#modal-success').show();
+              $('#contact-form')[0].reset(); // Limpa o formulário após o envio com sucesso
+            } else {
+              $('#modal-error').show();
+            }
+          });
+
+        }).catch(function(error) {
+          console.error("Erro no reCAPTCHA:", error);
+          $('#send-contact').html(submitValue);
+          loading = false;
+          $('#modal-error').show();
+        });
       });
     });
   });
 
-  $(document).ready(function() {
-    var loading = false;
-    $('#contact-form').on('submit', (event) => {
-      event.preventDefault();
-      if(loading) return
-
-      var loading = true;
-      var submitValue = $('#send-contact').html();
-      var values = {
-        name: $('#name').val(),
-        contact: $('#contact').val(),
-        message: $('#message').val(),
-      };
-      
-      $('#send-contact').html('<span>enviando...</span>');
-
-      sendMessage(values, function(res){
-        $('#send-contact').html(submitValue);
-        loading = false;
-        if (res.ok) {
-          $('#modal-success').show();
-        } else {
-          $('#modal-error').show();
-        }
-      })
-    })
-  });
-  
   function hideErrorModal() {
     $('#modal-error').hide();
   }

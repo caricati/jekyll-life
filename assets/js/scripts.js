@@ -178,9 +178,10 @@ function sendMessage(params, callback) {
     success: function (data) {
       callback({ ok: data.ok });
     },
-    fail: function (data) {
-      callback({ ok: true });
+    error: function (data) {
+      callback({ ok: false });
     },
+
   });
 }
 
