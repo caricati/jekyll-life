@@ -36,7 +36,26 @@ tags:
   {% include modal-alert.html id="modal-error" jsOnClickFn="hideErrorModal()" title="Erro ao enviar" message="Parece que ocorreu um erro ao enviar seus dados. Você pode tentar enviar em alguns instantes? Valeu!!" %}
 </section>
 
+<script src="https://www.google.com/recaptcha/api.js?render=6Lfuv8wtAAAAAEVNQDpLye8OvL3QHtjMBgRNiPDr"></script>
 <script type="text/javascript">
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var form = this;
+    
+    grecaptcha.ready(function() {
+      grecaptcha.execute('6Lfuv8wtAAAAAEVNQDpLye8OvL3QHtjMBgRNiPDr', {action: 'submit'}).then(function(token) {
+        var input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = 'g-recaptcha-response';
+        input.value = token;
+        form.appendChild(input);
+        
+        // Envia o formulário
+        form.submit();
+      });
+    });
+  });
+
   $(document).ready(function() {
     var loading = false;
     $('#contact-form').on('submit', (event) => {
