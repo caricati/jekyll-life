@@ -175,7 +175,7 @@ function sendMessage(params, callback) {
       callback({ ok: data.ok, message: data.message || data?.responseJSON?.message });
     },
     error: function (data) {
-      callback({ ok: false, message: data.responseJSON.message });
+      callback({ ok: false, message: data?.responseJSON?.message || 'Internal server error' });
     },
 
   });
