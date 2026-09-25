@@ -49,18 +49,18 @@ Os dados coletados são utilizados estritamente para as seguintes finalidades:
 O site **Mr. Caricati** possui seu código-fonte aberto e hospedado publicamente no repositório [GitHub - caricati/jekyll-life](https://github.com/caricati/jekyll-life){:target="_blank"}.
 * Esclarecemos que **nenhum dado pessoal de visitante ou mensagem enviada pelo formulário de contato é armazenado no repositório público**. O GitHub armazena exclusivamente o código estrutural e os arquivos estáticos necessários para a construção do site.
 
-## Compartilhamento de Dados com Terceiros
+## Dados Terceiros
 
 Não vendemos, alugamos ou comercializamos dados pessoais de nossos visitantes com terceiros. O compartilhamento de dados só ocorrerá nas seguintes situações excepcionais:
 
 * **Serviços e Plataformas Embarcadas:** Nosso site exibe vídeos, mídias e reprodutores hospedados em plataformas como **YouTube**, **Instagram** e infraestruturas de hospedagem (ex: GitHub Pages). Ao interagir com esses conteúdos, as respectivas plataformas terceiras podem coletar dados técnicos de acordo com suas próprias políticas de privacidade.
 * **Cumprimento de Obrigação Legal:** Quando necessário para atender a requisições judiciais ou obrigações previstas em lei.
 
-## Links para Sites e Serviços de Terceiros
+## Links para Sites e Serviços
 
 O site `mrcaricati.com` contém links para sites, lojas ou plataformas externas. Não nos responsabilizamos pelas práticas de privacidade, termos de uso ou pelos conteúdos desses sites terceiros. Recomendamos que você leia a Política de Privacidade de cada portal que visitar.
 
-## Armazenamento e Segurança dos Dados
+## Armazenamento e Segurança
 
 Adotamos medidas técnicas e organizacionais razoáveis para proteger suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição. No entanto, nenhum método de transmissão pela Internet ou armazenamento eletrônico é 100% seguro.
 

@@ -168,18 +168,14 @@ function sendMessage(params, callback) {
   $.ajax({
     type: "POST",
     url: "https://api.mrcaricati.com/contact",
-    data: JSON.stringify({
-      name: params.name,
-      contact: params.contact,
-      message: params.message,
-    }),
+    data: JSON.stringify(params),
     contentType: "application/json",
     dataType: "json",
     success: function (data) {
-      callback({ ok: data.ok });
+      callback({ ok: data.ok, message: data.message || data?.responseJSON?.message });
     },
     error: function (data) {
-      callback({ ok: false });
+      callback({ ok: false, message: data.responseJSON.message });
     },
 
   });

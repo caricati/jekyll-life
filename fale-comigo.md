@@ -12,7 +12,7 @@ tags:
 <section id="contact-page">
   <div class="content">
     <header>
-      <h1>Fale comigo!</h1>
+      <h1 class="heading-underscore">Fale comigo!</h1>
       <p>Preencha o formulário abaixo com seu nome, email, e a mensagem que você quer mandar para mim.</p>
     </header>
     <form id="contact-form">
@@ -32,8 +32,8 @@ tags:
       </div>
     </form>
   </div>
-  {% include modal-alert.html id="modal-success" jsOnClickFn="window.location='/'" title="Mensagem enviada" message="Sua mensagem foi enviada para mim. Fique de olho no seu e-mail que eu posso te responder em breve." %}
-  {% include modal-alert.html id="modal-error" jsOnClickFn="hideErrorModal()" title="Erro ao enviar" message="Parece que ocorreu um erro ao enviar seus dados. Você pode tentar enviar em alguns instantes? Valeu!!" %}
+  {% include modal-alert.html id="modal-success" jsOnClickFn="hideAlertModal()" title="Mensagem enviada" message="Sua mensagem foi enviada. Fique de olho no seu e-mail que eu posso te responder em breve." %}
+  {% include modal-alert.html id="modal-error" jsOnClickFn="hideErrorModal()" title="Erro ao enviar" message="Parece que ocorreu um erro ao enviar seus dados. Você pode tentar enviar em alguns instantes?" %}
 </section>
 
 <script src="https://www.google.com/recaptcha/api.js?render=6Lfuv8wtAAAAAEVNQDpLye8OvL3QHtjMBgRNiPDr"></script>
@@ -64,10 +64,14 @@ tags:
             $('#send-contact').html(submitValue);
             loading = false;
 
+            console.log(res)
+
             if (res && res.ok) {
+              $('#modal-success .modal p').html(res.message);
               $('#modal-success').show();
               $('#contact-form')[0].reset(); // Limpa o formulário após o envio com sucesso
             } else {
+              $('#modal-error .modal p').html(res.message);
               $('#modal-error').show();
             }
           });
@@ -76,6 +80,7 @@ tags:
           console.error("Erro no reCAPTCHA:", error);
           $('#send-contact').html(submitValue);
           loading = false;
+          $('#modal-error .modal p').html('Erro no reCAPTCHA!');
           $('#modal-error').show();
         });
       });
@@ -84,5 +89,9 @@ tags:
 
   function hideErrorModal() {
     $('#modal-error').hide();
+  }
+
+  function hideAlertModal() {
+    $('#modal-success').hide();
   }
 </script>
