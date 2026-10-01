@@ -1,0 +1,129 @@
+<section>
+  <a name="comments"></a>
+  <div class="comments">
+    <h3 class="heading-underscore">Comentários</h3>
+
+    <div id="comment-content"></div>
+
+    <button class="btn-skew primary" id="button-leave-comment">
+      <span>Deixar um comentário</span>
+    </button>
+
+    <form class="comment-form hide" id="form-comment">
+      <h3 class="heading-underscore">Deixe seu comentário</h3>
+      <label for="name">Apelido</label>
+      <input type="text" id="name" name="name" maxlength="30" required placeholder="Nickname" required />
+      <label for="message">Comentário</label>
+      <textarea name="message" id="comment-textarea" maxlength="2048" rows="4" placeholder="Seu comentário para esse post" required></textarea>
+      <p class="counter">
+        <span data-counter-from="#comment-textarea">0</span>/<span>2048</span>
+      </p>
+      <button class="btn-skew primary" type="submit" id="submit-leave-button">
+        <span>Comentar</span>
+      </button>
+    </form>
+  </div>
+</section>
+
+  {% include modal-alert.html id="modal-success" jsOnClickFn="hideAlertModal()" title="Comentário enviado" message="Seu comentário foi enviado e está em análise para aprovação. Obrigado!" %}
+  {% include modal-alert.html id="modal-error" jsOnClickFn="hideErrorModal()" title="Erro ao enviar" message="Ocorreu um erro ao enviar seu comentário. Tente novamente mais tarde!" %}
+
+<script type="text/javascript">
+  function formatDate(strDate) {
+    const date = new Date(strDate)
+    return date.toLocaleString().replace(',', '');
+  }
+
+  $(document).ready(function() {
+    $('#btn-commentit').on('click', function(event) {
+      event.preventDefault();
+      $('#comment-form-modal').show();
+    });
+
+    $('#comment-content').html('<p>Carregando comentários...</p>');
+
+    const ref = btoa(window.location.pathname);
+    const comments = $.get(`https://api.mrcaricati.com/blog/comments?ref=${ref}`, function({ data }) {
+      $('#comment-content').html('');
+      if (data.length) {
+        data.forEach(comment => $('#comment-content').append(`
+          <article class="comment">
+            <div class="comment-photo">${comment.name.charAt(0).toUpperCase()}</div>
+            <div class="comment-text">
+              <p><b>${comment.name}, comentou:</b></p>
+              <p>${comment.comment}</p>
+              <time>${formatDate(comment.createdAt)}</time>
+            </div>
+          </article>
+        `));
+      } else {
+        $('#comment-content').html('<p>Nenhum comentário para este post.</p>');
+      }
+    });
+  });
+</script>
+
+<script src="https://www.google.com/recaptcha/api.js?render=6Lfuv8wtAAAAAEVNQDpLye8OvL3QHtjMBgRNiPDr"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    console.log(new URLSearchParams(btoa(window.location.pathname)).toString())
+    console.log(btoa(window.location.pathname))
+
+    $('#button-leave-comment').on('click', function(event) {
+      event.preventDefault();
+      $(this).hide();
+      $('#form-comment').slideDown(300);
+    });
+
+    $('#form-comment').on('submit', (event) => {
+      event.preventDefault();
+      const originalTextSubmitButton = $('#submit-leave-button span').text();
+      $('#submit-leave-button span').html('Enviado...')
+      $('#submit-leave-button').attr('disabled', 'disabled');
+
+
+      grecaptcha.ready(function() {
+        grecaptcha.execute('6Lfuv8wtAAAAAEVNQDpLye8OvL3QHtjMBgRNiPDr', { action: 'submit' }).then(function(token) {
+          event.preventDefault();
+
+          const ref = btoa(window.location.pathname);
+          const body = { ref, name: $('#name').val(), comment: $('#comment-textarea').val(), 'g-recaptcha-response': token };
+          const comments = $.ajax({
+            url: 'https://api.mrcaricati.com/blog/comment',
+            type: "POST",
+            data: JSON.stringify(body),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(data) {
+              if (data.ok) {
+                $('#modal-success').show();
+              }
+              else {
+                $('#modal-error').show();
+              }
+            },
+            error() {
+              $('#modal-error').show();
+            },
+            complete() {
+              $('#submit-leave-button span').html(originalTextSubmitButton)
+              $('#submit-leave-button').removeAttr("disabled");
+            },
+          });
+
+        }).catch(function(error) {
+          $('#modal-error').show();
+        });
+      });
+    });
+  });
+
+  function hideErrorModal() {
+    $('#modal-error').hide();
+  }
+
+  function hideAlertModal() {
+    $('#form-comment')[0].reset();
+    $('#modal-success').hide();
+  }
+</script>

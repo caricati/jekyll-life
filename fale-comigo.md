@@ -64,8 +64,6 @@ tags:
             $('#send-contact').html(submitValue);
             loading = false;
 
-            console.log(res)
-
             if (res && res.ok) {
               $('#modal-success .modal p').html(res.message);
               $('#modal-success').show();
