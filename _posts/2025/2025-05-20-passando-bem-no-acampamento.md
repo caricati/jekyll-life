@@ -4,7 +4,7 @@ description: É tempo de chuva no centro-oeste, com ela o deserto do Cerrado se 
 date: 2025-05-20
 published: true
 layout: single
-pitchUrl: /assets/uploads/25/0520/pitch.jpg
+bannerUrl: /assets/uploads/25/0520/pitch.jpg
 thumbUrl: /assets/uploads/25/0520/thumb-v.jpg
 categories: comidas
 highlight: true

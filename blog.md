@@ -19,6 +19,9 @@ tags:
         <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%d/%m/%Y %H:%M" }}</time>
       </p>
     </header>
+    <figure class="banner-post">
+      <img src="{{ post.bannerUrl }}" alt="" />
+    </figure>
     {{ post.content }}
     <a href="{{ post.url | relative_url }}#comments">Fazer um comentário</a>
   </article>

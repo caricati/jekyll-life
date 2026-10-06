@@ -4,7 +4,7 @@ description: Fui acampar sozinho com minha cachorra na Chapada dos Veadeiros. Ap
 date: 2026-03-15
 published: true
 layout: single
-pitchUrl: /assets/uploads/26/0315/pitch.jpg
+bannerUrl: /assets/uploads/26/0315/pitch.jpg
 thumbUrl: /assets/uploads/26/0315/thumb-v.jpg
 categories: outdoor
 highlight: true

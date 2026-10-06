@@ -4,7 +4,7 @@ description: Neste vídeo, eu mostro todos os detalhes da preparação da minha 
 date: 2026-04-09
 published: true
 layout: single
-pitchUrl: /assets/uploads/26/0409/pitch.jpg
+bannerUrl: /assets/uploads/26/0409/pitch.jpg
 thumbUrl: /assets/uploads/26/0409/thumb-v.jpg
 categories: carros
 highlight: true

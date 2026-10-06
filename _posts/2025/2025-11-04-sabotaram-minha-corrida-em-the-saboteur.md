@@ -3,7 +3,7 @@ title: Sabotaram minha corrida em The Saboteur
 description: Sean Devlin participa de um grande prêmio em Saarbrücken, correndo contra o rival Kurt Dierker, durante a corrida, Dierker comete trapaça e ele atira no pneu do carro de Sean, fazendo-o perder controle e abandonar a disputa. Como consequência, Dierker vence a corrida e Sean e seus aliados ficam revoltados. Este evento marca o início da vingança de Sean contra Dierker e sua aliança com a resistência francesa.
 date: 2025-10-11
 layout: single-gameplay
-pitchUrl: /assets/img/games/thumb/thesaboteur-pitch.jpg
+bannerUrl: /assets/img/games/thumb/thesaboteur-pitch.jpg
 thumbUrl: /assets/uploads/25/1103/thumb-v.jpg
 categories: gameplay
 videoUrl: https://www.youtube.com/embed/BdFoUYovYTU?autoplay=1

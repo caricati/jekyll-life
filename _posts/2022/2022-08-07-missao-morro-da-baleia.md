@@ -3,7 +3,7 @@ title: Missão Cerrado no morro da baleia
 description: Tivemos a missão se subir o borro da baleia, um dos cartões postais localizados na Chapada dos Veadeiros.
 date: 2022-08-07
 layout: single
-pitchUrl: /assets/uploads/22/0807/pitch.jpg
+bannerUrl: /assets/uploads/22/0807/pitch.jpg
 thumbUrl: /assets/uploads/22/0807/thumb-v.jpg
 categories:
   - outdoor

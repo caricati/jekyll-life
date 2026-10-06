@@ -4,7 +4,7 @@ description: O proprietário do canal Mr. Caricati compartilha sua jornada de qu
 date: 2026-04-26
 published: true
 layout: single
-pitchUrl: /assets/uploads/26/0426/pitch.jpg
+bannerUrl: /assets/uploads/26/0426/pitch.jpg
 thumbUrl: /assets/uploads/26/0426/thumb-v.jpg
 categories: carros
 highlight: true

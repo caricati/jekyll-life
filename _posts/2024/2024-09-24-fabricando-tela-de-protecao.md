@@ -3,7 +3,7 @@ title: Fabricando a tela de proteção no projeto overlander
 description: Neste vídeo vamos mostrar o processo de fabricação de tela para o rack de caçamba do projeto overlander
 date: 2024-09-24
 layout: single
-pitchUrl: /assets/uploads/24/0924/pitch.jpg
+bannerUrl: /assets/uploads/24/0924/pitch.jpg
 thumbUrl: /assets/uploads/24/0924/thumb-v.jpg
 categories:
   - oficina

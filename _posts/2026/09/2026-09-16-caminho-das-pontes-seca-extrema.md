@@ -4,7 +4,7 @@ description: Uma expedição solo e inóspita rumo ao coração do Cerrado brasi
 date: 2026-09-16
 published: true
 layout: single
-pitchUrl: /assets/uploads/26/0916/cover.jpg
+bannerUrl: /assets/uploads/26/0916/cover.jpg
 thumbUrl: /assets/uploads/26/0916/thumb-v.png
 categories: outdoor
 highlight: true

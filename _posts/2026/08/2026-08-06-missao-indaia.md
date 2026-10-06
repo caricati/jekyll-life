@@ -4,7 +4,7 @@ description: Vem comigo em um dia inesquecível de ecoturismo no interior de Goi
 date: 2026-08-06
 published: true
 layout: single
-pitchUrl: /assets/uploads/26/0806/cover.jpg
+bannerUrl: /assets/uploads/26/0806/cover.jpg
 thumbUrl: /assets/uploads/26/0806/thumb-v.jpg
 categories: outdoor
 highlight: true

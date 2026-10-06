@@ -3,7 +3,7 @@ title: Battlefield 1 - Argonne Forest tem seu valor
 description: Nada melhor que uma partida de Battlefield 1 jogando no mapa Argonne Forest. Acompanhe comigo essa gameplay.
 date: 2024-09-26
 layout: single-gameplay
-pitchUrl: /assets/img/games/thumb/battlefield1-pitch.jpg
+bannerUrl: /assets/img/games/thumb/battlefield1-pitch.jpg
 thumbUrl: /assets/uploads/24/0926/thumb-v.jpg
 categories: gameplay
 videoUrl: https://www.youtube.com/embed/p0mZfGQWy9Y?autoplay=1
