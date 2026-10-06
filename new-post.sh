@@ -77,8 +77,6 @@ thumbUrl: /uploads/$YY/$MM/$SLUG/thumb.jpg
 image: /uploads/$YY/$MM/$SLUG/thumb.jpg
 categories:
   - 
-audios:
-  - /uploads/$YY/$MM/$SLUG/voice-pt.mp3
 tags:
   - 
 ---

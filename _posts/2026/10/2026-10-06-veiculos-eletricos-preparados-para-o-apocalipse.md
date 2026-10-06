@@ -8,10 +8,21 @@ thumbUrl: /uploads/26/10/veiculos-eletricos-preparados-para-o-apocalipse/thumb.j
 image: /uploads/26/10/veiculos-eletricos-preparados-para-o-apocalipse/thumb.jpg
 categories:
   - blog
-audios:
-  - /uploads/26/10/veiculos-eletricos-preparados-para-o-apocalipse/voice-pt.mp3
 tags:
-  - 
+  - apocalipse
+  - off-road
+  - sobrevivencialismo
+  - carro elétrico
+  - veículos elétricos
+  - energia solar
+  - bateria de carro elétrico
+  - validade da gasolina
+  - manutenção automotiva
+  - combustível fóssil
+  - carro elétrico no apocalipse
+  - carro elétrico ou a combustão
+  - durabilidade da bateria elétrica
+  - carro elétrico off-road
 ---
 
 Por ter uma arquitetura e um conceito bem diferentes do que estamos acostumados, os veículos elétricos ainda deixam muita gente com uma pulga atrás da orelha. Várias pessoas defendem os carros a combustão pela tradição, mas os elétricos quebram vários monopólios e trazem uma liberdade gigantesca para quem roda com eles.
