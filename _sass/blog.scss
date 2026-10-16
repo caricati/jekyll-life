@@ -28,6 +28,16 @@
     }
   }
 
+  .tag {
+    font-size: 0.75rem;
+  }
+
+  .single-post{
+    .tag {
+      background-color: $tag-bg-color;
+    }
+  }
+
   .blog-header {
 
     h1 {

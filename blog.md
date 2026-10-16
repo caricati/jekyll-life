@@ -22,6 +22,11 @@ tags:
     <figure class="banner-post">
       <img src="{{ post.bannerUrl }}" alt="" />
     </figure>
+    <p>
+      {% for tag in post.tags limit: 3 %}
+        <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </p>
     {{ post.content }}
     <a href="{{ post.url | relative_url }}#comments">Fazer um comentário</a>
   </article>

@@ -2,7 +2,7 @@
 title: Bem-vindo ao blog do Mr. Caricati
 description: Essa é uma breve descrição de um artigo para meu blog.
 date: 2026-09-30 22:17:00
-layout: single-post
+layout: post
 bannerUrl:
 thumbUrl:
 categories: blog

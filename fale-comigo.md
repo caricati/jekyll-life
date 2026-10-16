@@ -2,7 +2,7 @@
 layout: single
 title: Fale comigo
 permalink: /fale-comigo
-description: Quer entrar em contato com Mr. Caricati? Você pode falar sobre qualquer assunto, sugestões, dúvidas, patrocínio, entre outros. Preencha o formulário e mande sua mensagem para mim.
+description: Entre em contato com o Mr. Caricati. Tire dúvidas, envie sugestões de conteúdo ou envie propostas de parcerias.
 tags: 
   - contato
   - email
@@ -13,7 +13,15 @@ tags:
   <div class="content">
     <header>
       <h1 class="heading-underscore">Fale comigo!</h1>
-      <p>Preencha o formulário abaixo com seu nome, email, e a mensagem que você quer mandar para mim.</p>
+      <p>Entre em contato com o Mr. Caricati. Tire dúvidas, envie sugestões de conteúdo ou envie propostas de parcerias.</p>
+      <p>
+        ❓ Dúvidas: Perguntas nossos conteúdos, políticas e entretenimento.
+        <br>
+        💡 Sugestões: Ideias de pautas, locais para explorar, receitas mateiras ou melhorias para o site.
+        <br>
+        🤝 Parcerias e Negócios: Propostas comerciais, testes de produtos, publieditoriais ou projetos em colaboração.
+      </p>
+      <p>Preencha o formulário abaixo ou envie um e-mail. Leio todas as mensagens e respondo assim que voltar para o sinal da civilização!</p>
     </header>
     <form id="contact-form">
       <label for="name">Nome</label>

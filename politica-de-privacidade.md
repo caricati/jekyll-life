@@ -10,7 +10,7 @@ tags:
   - page
 ---
 
-**Última atualização:** 23 de setembro de 2026
+**Última atualização:** 16 de outubro de 2026
 
 A privacidade dos visitantes do site **Mr. Caricati** ([www.mrcaricati.com](https://mrcaricati.com)) é de extrema importância para nós. Esta Política de Privacidade descreve de forma clara e transparente como as suas informações pessoais são coletadas, utilizadas, armazenadas e protegidas ao acessar ou interagir com o nosso site e conteúdos.
 
@@ -21,9 +21,11 @@ Ao utilizar este site, você concorda com a coleta e o uso de informações de a
 Coletamos o mínimo de informações necessárias para oferecer uma boa experiência de navegação e atender às solicitações dos usuários. As informações podem ser coletadas das seguintes formas:
 
 * **Informações fornecidas voluntariamente pelo usuário:**
-  * **Formulários de contato ou mensagens:** Caso você utilize a página *"Fale comigo"* ou envie e-mails diretos, poderemos coletar seu nome, endereço de e-mail e o conteúdo da mensagem fornecida.
+* **Formulários de contato ou mensagens:** Caso você utilize a página *"Fale comigo"* ou envie e-mails diretos, poderemos coletar seu nome, endereço de e-mail e o conteúdo da mensagem fornecida.
+
+
 * **Informações de navegação e dados técnicos (coletados automaticamente):**
-  * **Dados do dispositivo e acesso:** Podem ser coletados dados como endereço IP, tipo de navegador, sistema operacional, páginas visitadas, tempo de permanência e links clicados.
+* **Dados do dispositivo e acesso:** Podem ser coletados dados como endereço IP, tipo de navegador, sistema operacional, páginas visitadas, tempo de permanência e links clicados.
 
 ## Finalidade do Uso das Informações
 
@@ -47,6 +49,7 @@ Os dados coletados são utilizados estritamente para as seguintes finalidades:
 ## Código-Fonte Aberto
 
 O site **Mr. Caricati** possui seu código-fonte aberto e hospedado publicamente no repositório [GitHub - caricati/jekyll-life](https://github.com/caricati/jekyll-life){:target="_blank"}.
+
 * Esclarecemos que **nenhum dado pessoal de visitante ou mensagem enviada pelo formulário de contato é armazenado no repositório público**. O GitHub armazena exclusivamente o código estrutural e os arquivos estáticos necessários para a construção do site.
 
 ## Dados Terceiros
@@ -81,4 +84,4 @@ Reservamo-nos o direito de atualizar ou modificar esta Política de Privacidade 
 
 ## Contato
 
-Se você tiver dúvidas, sugestões ou solicitações relacionadas a esta Política de Privacidade ou ao tratamento de seus dados pessoais, entre em contato através da página [fale comigo](/fale-comigo).
+Se você tiver dúvidas, sugestões ou solicitações relacionadas a esta Política de Privacidade ou ao tratamento de seus dados pessoais, entre em contato através da página **[fale comigo](https://mrcaricati.com/fale-comigo)**.

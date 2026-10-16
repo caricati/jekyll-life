@@ -9,7 +9,7 @@ tags:
   - page
 ---
 
-**Última atualização:** 23 de setembro de 2026
+**Última atualização:** 16 de outubro de 2026
 
 Seja bem-vindo ao site **Mr. Caricati** ([https://mrcaricati.com](https://mrcaricati.com)). Ao acessar, navegar ou utilizar este site, você concorda expressamente em cumprir e respeitar os seguintes Termos e Condições de Uso. Caso não concorde com qualquer disposição aqui apresentada, solicitamos que interrompa o uso do site.
 
@@ -28,7 +28,7 @@ O site **Mr. Caricati** destina-se ao compartilhamento de conteúdos informativo
 
 ## Uso Livre e Propriedade Intelectual
 
-1. **Uso Irrestrito e Livre:** Todo o conteúdo disponibilizado neste site (incluindo textos, áudios, imagens, artes e produções audiovisuais) é concedido sob uma licença permissiva, similar à **Licença MIT**. Você é livre para usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do conteúdo, sem qualquer restrição, para fins pessoais ou comerciais.
+1. **Uso do Conteúdo:** É permitido utilizar, copiar, modificar, distribuir e compartilhar gratuitamente o conteúdo disponibilizado neste site para fins pessoais ou informativos. No entanto, **os vídeos produzidos e disponibilizados no site ou em seus canais oficiais não podem ser comercializados, vendidos ou monetizados por terceiros**.
 2. **Sem Garantias:** O conteúdo é fornecido "no estado em que se encontra" (*as is*), sem garantias de qualquer tipo, expressas ou implícitas.
 
 ## Inteligência Artificial
@@ -41,7 +41,7 @@ O site **Mr. Caricati** destina-se ao compartilhamento de conteúdos informativo
 O código-fonte que constrói e estrutura este site é totalmente aberto e transparente.
 
 * Você pode visualizar, clonar ou estudar o projeto através do repositório no GitHub:
- [https://github.com/caricati/jekyll-life](https://github.com/caricati/jekyll-life){:target="_blank"}
+[https://github.com/caricati/jekyll-life](https://github.com/caricati/jekyll-life)
 
 ## Isenção de Responsabilidade
 

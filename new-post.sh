@@ -19,7 +19,7 @@ slugify() {
 
 read -p "Titulo em portugues: " TITLE
 read -p "Data da publicação (YYYY-MM-DD): " POST_DATE
-read -p "Layout: " POST_LAYOUT
+read -p "Layout (post, single): " POST_LAYOUT
 
 # ==========================================
 # Datas
@@ -75,6 +75,7 @@ date: $YYYY-$MM-$DD 12:20:00 -0300
 bannerUrl: /uploads/$YY/$MM/$SLUG/cover.jpg
 thumbUrl: /uploads/$YY/$MM/$SLUG/thumb.jpg
 image: /uploads/$YY/$MM/$SLUG/thumb.jpg
+highlight: false
 categories:
   - 
 tags:

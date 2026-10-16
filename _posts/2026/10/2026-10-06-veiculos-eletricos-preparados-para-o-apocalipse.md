@@ -1,7 +1,7 @@
 ---
 title: "Veículos elétricos preparados para o apocalipse"
 description: "Será que os veículos elétricos durariam em um apocalipse? Descubra por que a energia solar e a mecânica simples dão vantagem aos elétricos sobre a gasolina."
-layout: single-post
+layout: post
 date: 2026-10-06 12:20:00 -0300
 bannerUrl: /uploads/26/10/veiculos-eletricos-preparados-para-o-apocalipse/cover.jpg
 thumbUrl: /uploads/26/10/veiculos-eletricos-preparados-para-o-apocalipse/thumb.jpg
