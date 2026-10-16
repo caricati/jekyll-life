@@ -11,11 +11,11 @@
   display: grid;
   grid-template-columns: 1fr 140px 1fr;
 
-  & > nav:first-child {
+  & > nav.navleft {
     text-align: right;
   }
 
-  & > nav:last-child {
+  & > nav.navright {
     text-align: left;
   }
 
@@ -26,8 +26,9 @@
     padding-top: 30px;
     letter-spacing: 0.05rem;
 
-    &:first-child {
+    &.navleft {
       justify-content: flex-end;
+      text-align: right;
     }
 
     a {
@@ -44,10 +45,6 @@
         text-shadow: 0 0 8px rgba(255, 145, 0, 0.75);
       }
     }
-
-    @media screen and (max-width: 550px) {
-      display: none;
-    }
   }
 
   .logo-link {
@@ -55,14 +52,10 @@
     left: 50%;
     z-index: 100;
     transform: translateX(-50%) translateY(0.625rem);
-    transition: ease 600ms transform;
+    // transition: ease 600ms transform;
 
     img {
       width: 120px;
-    }
-
-    &:hover {
-      transform: translateX(-50%) scale(1.05) translateY(0.625rem);
     }
   }
 
@@ -71,5 +64,28 @@
     top: 0;
     left: 0;
     z-index: 1001;
+  }
+
+  @media screen and (max-width: 550px) {
+    display: flex;
+    transform: none;
+    left: 0;
+
+    nav.navleft {
+      padding-left: 8.5rem;
+    }
+
+    .logo-link {
+      left: -7rem;
+      transform: translateY(0.625rem) translateX(100%);
+
+      &:hover {
+        transform: translateY(0.625rem) translateX(100%);
+      }
+    }
+
+    .link-gameplay {
+      display: none;
+    }
   }
 }
