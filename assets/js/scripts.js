@@ -280,4 +280,12 @@ $(document).ready(function () {
   $gototop.children('button').on('click', function() {
     $(window).scrollTop(0);
   });
+
+  $('#header .menu-toggle, #header .logo').on('click', function() {
+    $('#header').hasClass('show') ? $('#header').removeClass('show') : $('#header').addClass('show');
+  });
+
+  $('#header .menu-close').on('click', function() {
+    $('#header').removeClass('show');
+  });
 });

@@ -1,0 +1,50 @@
+#category {
+  .category-header {
+    padding: 200px 0;
+    position: relative;
+
+    &.bg-outdoor {
+      background: url('../img/banner/outdoor.jpg') no-repeat top left;
+      background-size: cover;
+    }
+
+    &.bg-oficina {
+      background: url('../img/banner/workshop.jpg') no-repeat top left;
+      background-size: cover;
+    }
+
+    &.bg-roca {
+      background: url('../img/banner/garden.jpg') no-repeat top left;
+      background-size: cover;
+    }
+
+    &.bg-gameplay {
+      background: url('../img/banner/gameplay.jpg') no-repeat top left;
+      background-size: cover;
+    }
+
+    p {
+      font-size: 1.25rem;
+      max-width: 600px;
+    }
+
+    &:after {
+      content: '';
+      background: url('../img/body-gradient.png') top left repeat-x;
+      height: 120px;
+      width: 100%;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    @media screen and (max-width: 800px) {
+      padding: 150px 0 100px;
+    }
+  }
+
+  .category-list {
+    margin-top: -8rem;
+  }
+}

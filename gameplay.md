@@ -1,5 +1,0 @@
----
-layout: gameplay
-permalink: /gameplay
----
-

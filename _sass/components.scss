@@ -132,18 +132,6 @@
     outline: none;
     position: relative;
 
-    figure::after {
-      width: 75%;
-      height: 75%;
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      background: url('../img/glass-photo.svg') no-repeat top right;
-      background-size: contain;
-      z-index: 5;
-    }
-
     img {
       width: 100%;
       display: block;
@@ -167,7 +155,7 @@
   display: grid;
   gap: 1.6rem;
   padding: 1rem 0;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
   .video-item {
     overflow: hidden;
@@ -175,18 +163,6 @@
     border-radius: 2px;
     outline: none;
     position: relative;
-
-    figure::after {
-      width: 75%;
-      height: 75%;
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      background: url('../img/glass-photo.svg') no-repeat top right;
-      background-size: contain;
-      z-index: 5;
-    }
 
     img {
       width: 100%;

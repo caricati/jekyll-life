@@ -1,34 +1,118 @@
 #header {
-  width: 694px;
-  height: 80px;
-  background: url('../img/header-bg.svg') no-repeat;
-  background-position: center 0;
+  width: 590px;
   position: fixed;
-  top: -16px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1001;
-  display: grid;
-  grid-template-columns: 1fr 140px 1fr;
+  top: -432px;
+  transition: ease top 250ms;
 
-  & > nav.navleft {
-    text-align: right;
+  &.show {
+    top: 0;
   }
 
-  & > nav.navright {
-    text-align: left;
+  .header-fixed {
+    width: 590px;
+    height: 80px;
+    background: url('../img/header.png') no-repeat;
+    background-position: center 0;
+    position: absolute;
+    bottom: -74px;
+    left: 0;
+    z-index: 15;
+  }
+
+  button.menu-close {
+    appearance: none;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    z-index: 10;
+    cursor: pointer;
+    padding: 6px;
+  }
+
+  .menu-toggle {
+    width: 32px;
+    height: 40px;
+    transform: translate(6rem, 0.875rem);
+    background: none;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+
+    span {
+      width: 100%;
+      height: 3px;
+      background-color: $gray-3-color;
+      display: block;
+      border-radius: 2px;
+
+      &::after, &::before {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: $gray-3-color;
+        display: block;
+        position: absolute;
+        border-radius: 2px;
+      }
+
+      
+      &::before {
+        transform: translateY(-10px);
+      }
+      
+      &::after {
+        transform: translateY(10px);
+      }
+    }
   }
 
   nav {
-    font-size: 14px;
+    font-size: 1rem;
     text-transform: uppercase;
     font-family: $default-font-family;
-    padding-top: 30px;
     letter-spacing: 0.05rem;
+    background-color: $body-color;
+    margin: 0 4rem;
+    box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.75);
+    padding: 1rem;
+    position: relative;
+    border-left: 4px solid $line-color;
+    border-right: 4px solid $line-color;
+    z-index: 9;
 
-    &.navleft {
-      justify-content: flex-end;
-      text-align: right;
+    &::before, &::after {
+      content: '';
+      display: block;
+      width: 15px;
+      height: 100%;
+      top: 0;
+      background: url('../img/chain.svg') repeat-y top center;
+      position: absolute;
+      background-size: 10px;
+      z-index: 10;
+    }
+
+    &::before {
+      left: -26px;
+    }
+    
+    &::after {
+      right: -26px;
+    }
+
+    ul {
+      list-style: none;
+      height: 400px;
+      overflow: auto;
+
+      li {
+        margin: 0;
+      }
     }
 
     a {
@@ -36,27 +120,27 @@
       position: relative;
       z-index: 2;
       text-transform: uppercase;
-      transition: 0.3s ease-in-out;
       margin: 0 0.5rem;
-      padding: 0.625rem 0.25rem;
+      padding: 10px 4px 4px;
+      margin-bottom: 10px;
+      display: inline-block;
+      border-bottom: 2px solid transparent;
 
       &:hover {
         color: $white-color;
-        text-shadow: 0 0 8px rgba(255, 145, 0, 0.75);
+        border-bottom-color: $primary-color;
       }
     }
   }
 
-  .logo-link {
+  .logo {
     position: absolute;
     left: 50%;
     z-index: 100;
-    transform: translateX(-50%) translateY(0.625rem);
+    transform: translateX(-50%) translateY(-2px);
     // transition: ease 600ms transform;
-
-    img {
-      width: 120px;
-    }
+    width: 120px;
+    cursor: pointer;
   }
 
   &.sticky {
@@ -66,26 +150,20 @@
     z-index: 1001;
   }
 
-  @media screen and (max-width: 550px) {
-    display: flex;
-    transform: none;
-    left: 0;
+  @media screen and (max-width: 570px) {
+    width: 370px;
 
-    nav.navleft {
-      padding-left: 8.5rem;
+    .header-fixed {
+      width: 370px;
+      background-image: url('../img/header-mobile.png');
     }
 
-    .logo-link {
-      left: -7rem;
-      transform: translateY(0.625rem) translateX(100%);
-
-      &:hover {
-        transform: translateY(0.625rem) translateX(100%);
-      }
+    .menu-toggle {
+      transform: translate(4rem, 1rem);
     }
 
-    .link-gameplay {
-      display: none;
+    nav {
+      margin: 0 2.5rem;
     }
   }
 }

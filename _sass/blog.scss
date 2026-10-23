@@ -1,93 +1,3 @@
-#blog {
-  background-color: $box-contrast-color;
-  margin-bottom: 4rem;
-  padding: 11.25rem 0 6rem;
-  box-sizing: border-box;
-
-  .page-content {
-    max-width: 860px;
-
-    h1 {
-      margin-bottom: 2rem;
-    }
-
-    h2, h3, h4, h5, h6 {
-      &::after {
-        content: '';
-        width: 50px;
-        height: 4px;
-        display: block;
-        margin-top: 4px;
-        background-color: $primary-color;
-      }
-    }
-
-    .metainfos {
-      font-size: 0.875rem;
-      color: $text-light-color;
-    }
-  }
-
-  .tag {
-    font-size: 0.75rem;
-  }
-
-  .single-post{
-    .tag {
-      background-color: $tag-bg-color;
-    }
-  }
-
-  .blog-header {
-
-    h1 {
-      margin-bottom: 1rem;
-    }
-
-    p {
-      margin-bottom: 2rem;
-    }
-  }
-
-  .banner-post {
-    margin-bottom: 1rem;
-
-    img {
-      width: 100%;
-    }
-  }
-
-  .blog-article {
-    h2 {
-      font-size: 2.5rem;
-    }
-
-    h2, h3, h4, h5, h6 {
-      &::after {
-        content: '';
-        width: 50px;
-        height: 4px;
-        display: block;
-        margin-top: 4px;
-        background-color: $primary-color;
-      }
-    }
-
-    &::after {
-      content: '';
-      display: block;
-      height: 4px;
-      background-color: $line-color;
-      margin: 3rem 0;
-    }
-
-    .metainfos {
-      font-size: 0.875rem;
-      color: $text-light-color;
-    }
-  }
-}
-
 #comment-content {
   margin-bottom: 2rem;
 }
@@ -169,5 +79,75 @@
 
   input {
     margin-bottom: 10px;
+  }
+}
+
+#blog {
+  .blog-header {
+    padding: 200px 0;
+    position: relative;
+    background: url('../img/banner/blog.jpg') no-repeat top left;
+    background-size: cover;
+
+    p {
+      font-size: 1.25rem;
+      max-width: 600px;
+    }
+
+    &:after {
+      content: '';
+      background: url('../img/body-gradient.png') top left repeat-x;
+      height: 120px;
+      width: 100%;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    @media screen and (max-width: 800px) {
+      padding: 150px 0 100px;
+    }
+  }
+
+  .blog-list {
+    position: relative;
+    margin-top: -6rem;
+    border-radius: 4px;
+    max-width: 800px;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .banner-post {
+      margin-bottom: 1rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    h2, h3, h4, h5, h6 {
+      &::after {
+        content: '';
+        width: 50px;
+        height: 4px;
+        display: block;
+        margin-top: 4px;
+        background-color: $primary-color;
+      }
+    }
+
+    .metainfos {
+      font-size: 0.875rem;
+      color: $text-light-color;
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-article {
+      margin-bottom: 4rem;
+    }
   }
 }

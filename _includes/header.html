@@ -1,22 +1,58 @@
 <header id="header">
-  <a href="/" class="logo-link">
-    <img src="{{'assets/img/logo.svg' | absolute_url}}" alt="Mr. Caricati" />
-  </a>
-  <nav class="navleft">
-    <a href="/" class="link-home">
-      <span>Início</span>
-    </a>
-    <a href="/gameplay" class="link-gameplay">
-      <span>Gameplay</span>
-    </a>
+  <nav>
+    <ul>
+      <li>
+        <a href="/">
+          <span>Início</span>
+        </a>
+      </li>
+      <li>
+        <a href="/outdoor">
+          <span>Outdoor</span>
+        </a>
+      </li>
+      <li>
+        <a href="/oficina">
+          <span>Oficina</span>
+        </a>
+      </li>
+      <li>
+        <a href="/roca">
+          <span>Roça</span>
+        </a>
+      </li>
+      <li>
+        <a href="/gameplay">
+          <span>Gameplay</span>
+        </a>
+      </li>
+      <li>
+        <a href="/blog">
+          <span>Blog</span>
+        </a>
+      </li>
+      <li>
+        <a href="/fale-comigo">
+          <span>Fale comigo</span>
+        </a>
+      </li>
+    </ul>
+    <button type="button" class="menu-close" aria-label="Close menu">
+        <svg width="26px" height="26px" viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)" fill="#c7c7c7">
+              <g id="icons" transform="translate(56.000000, 160.000000)">
+                <polygon id="close-[#1511]" points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446"></polygon>
+              </g>
+            </g>
+          </g>
+        </svg>
+    </button>
   </nav>
-  <div></div>
-  <nav class="navright">
-    <a href="/blog" class="link-blog">
-      <span>Blog</span>
-    </a>
-    <a href="/fale-comigo" class="link-contact">
-      <span>Contato</span>
-    </a>
-  </nav>
+  <div class="header-fixed">
+    <button type="button" class="menu-toggle" aria-label="Toggle menu">
+      <span class="hamburger"></span>
+    </button>
+    <img class="logo" src="{{'assets/img/logo.svg' | absolute_url}}" alt="Mr. Caricati" />
+  </div>
 </header>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+  <head>
+    {% include meta.html %}
+    <title>{{ page.title }} - {{ site.title }}</title>
+
+    <link rel="stylesheet" href="{{'/assets/css/main.css' | absolute_url}}" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <script
+      type="text/javascript"
+      src="{{'/assets/js/jquery.min.js' | absolute_url}}"
+    ></script>
+  </head>
+  <body>
+    <main>
+      {% include header.html %}
+      {% assign posts = site.categories[page.category] %}
+      <section id="category">
+        <header class="category-header bg-{{ page.category }}">
+          <div class="max-width">
+            <h1 class="heading-underscore mb-16">{{ page.title }}</h1>
+            <p>{{ page.description }}</p>
+          </div>
+        </header>
+        {% if posts.size > 0 %}
+          <section class="category-list padding-top-72 padding-bottom-72">
+            <div class="max-width videos-grid-list">
+              {% for post in posts %}
+                <a class="video-item" href="{{ post.url }}">
+                  <figure>
+                    <img src="{{ post.thumbUrl }}" alt="{{ post.title }}" />
+                  </figure>
+                </a>
+              {% endfor %}
+            </div>
+          </section>
+        {% endif %}
+      </section>
+
+      {% include footer.html %}
+    </main>
+    <div id="portal"></div>
+
+    <script
+      type="text/javascript"
+      src="{{'/assets/js/scripts.js' | absolute_url}}"
+    ></script>
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+  </body>
+</html>
