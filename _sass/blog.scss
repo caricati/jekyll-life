@@ -96,7 +96,7 @@
 
     &:after {
       content: '';
-      background: url('../img/body-gradient.png') top left repeat-x;
+      background: url('../img/body-transaction.png') top left repeat-x;
       height: 120px;
       width: 100%;
       display: block;
@@ -148,6 +148,23 @@
 
     .blog-article {
       margin-bottom: 4rem;
+    }
+  }
+
+  .single-post {
+    margin-top: 12rem;
+
+    .banner-post img {
+      width: 100%;
+    }
+
+    .single-post-header {
+      max-width: 980px;
+      margin-bottom: 2rem;
+
+      h1 {
+        margin-bottom: 0.5rem;
+      }
     }
   }
 }
