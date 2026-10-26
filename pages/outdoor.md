@@ -3,7 +3,7 @@ layout: category
 title: "Outdoor"
 permalink: /outdoor
 category: outdoor
-description: "Em expedições 4x4, acampamentos selvagens, trilhas e culinária no mato, roteiros e aventuras na natureza"
+description: "Em expedições 4x4, acampamentos selvagens, trilhas e culinária no mato, roteiros e aventuras na natureza."
 tags:
   - outdoor
   - 4x4

@@ -22,39 +22,37 @@
       <section id="blog">
         <header class="blog-header">
           <div class="max-width">
-            <h1 class="heading-underscore mb-16">{{ page.title }}</h1>
-            <p>{{ page.description }}</p>
+            <h1 class="mb-16">{{ page.title }}</h1>
+            <p><span>{{ page.description }}</span></p>
           </div>
         </header>
-        <div class="max-width">
-          <div class="blog-list">
-            {% assign posts = site.categories.blog %}
-            {% for post in posts limit: 6 %}
-              <article class="blog-article text-content">
-                <header>
-                  <h2>
-                    <a href="{{ post.url | relative_url }}">#</a>
-                    {{ post.title }}
-                  </h2>
-                  <p class="metainfos">
-                    <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%d/%m/%Y %H:%M" }}</time>
-                  </p>
-                </header>
-                {% if post.bannerUrl %}
-                  <figure class="banner-post">
-                    <img src="{{ post.bannerUrl }}" alt="" />
-                  </figure>
-                {% endif %}
-                <p>
-                  {% for tag in post.tags limit: 3 %}
-                    <span class="tag">{{ tag }}</span>
-                  {% endfor %}
+        <div class="blog-list max-width">
+          {% assign posts = site.categories.blog %}
+          {% for post in posts limit: 6 %}
+            <article class="blog-article text-content">
+              <header>
+                <h2>
+                  <a href="{{ post.url | relative_url }}">#</a>
+                  {{ post.title }}
+                </h2>
+                <p class="metainfos">
+                  <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%d/%m/%Y %H:%M" }}</time>
                 </p>
-                {{ post.content }}
-                <a href="{{ post.url | relative_url }}#comments">Fazer um comentário</a>
-              </article>
-            {% endfor %}
-          </div>
+              </header>
+              {% if post.bannerUrl %}
+                <figure class="banner-post">
+                  <img src="{{ post.bannerUrl }}" alt="" />
+                </figure>
+              {% endif %}
+              <p>
+                {% for tag in post.tags limit: 3 %}
+                  <span class="tag">{{ tag }}</span>
+                {% endfor %}
+              </p>
+              {{ post.content }}
+              <a href="{{ post.url | relative_url }}#comments">Fazer um comentário</a>
+            </article>
+          {% endfor %}
         </div>
       </section>
       {% include footer.html %}

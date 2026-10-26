@@ -25,11 +25,11 @@ tags:
     </header>
     <form id="contact-form">
       <label for="name">Nome</label>
-      <input type="text" id="name" name="name" maxlength="30" placeholder="Seu nome" required />
+      <input type="text" id="name" name="name" maxlength="30" placeholder="Digite seu nome aqui" required />
       <label for="contact">Email</label>
-      <input type="email" id="contact" name="contact" maxlength="50" placeholder="nome@email.com" required />
+      <input type="email" id="contact" name="contact" maxlength="50" placeholder="Digite seu e-mail, exemplo: nome@email.com" required />
       <label for="message">Mensagem</label>
-      <textarea name="message" id="message" maxlength="2048" rows="10" placeholder="Escreva uma mensagem para mim..." required></textarea>
+      <textarea name="message" id="message" maxlength="2048" rows="6" placeholder="Escreva sua memsagem aqui" required></textarea>
       <p class="counter">
         <span data-counter-from="#message">0</span>/<span>2048</span>
       </p>

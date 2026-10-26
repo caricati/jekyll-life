@@ -23,9 +23,22 @@
       background-size: cover;
     }
 
+    h1 {
+      color: $white-color;
+      text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.6), -4px -4px 15px rgba(0, 0, 0, 0.6);
+    }
+
     p {
-      font-size: 1.25rem;
+      font-size: 1.375rem;
       max-width: 600px;
+
+      span {
+        color: $white-color;
+        display: inline;
+        background: rgba(0, 0, 0, 0.75);
+        padding: 2px;
+        line-height: 2;
+      }
     }
 
     &:after {

@@ -2,7 +2,7 @@
 layout: blog
 title: Blog
 permalink: /blog
-description: Explore o blog do Mr. Caricati com histórias de viagens, expedições, livros, leitura e reflexões. Descubra relatos de aventura, exploração, mapas e experiências que inspiram novas jornadas e compartilham conhecimento.
+description: Descubra relatos de aventura, exploração, mapas e experiências que inspiram novas jornadas e compartilham conhecimento.
 tags:
   - blog
   - histórias

@@ -38,8 +38,8 @@ textarea {
   margin-bottom: 2rem;
   box-sizing: border-box;
   padding: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.13);
-  background-color: $dark-bg-color;
+  border: 2px solid $input-line-color;
+  background-color: $input-bg-color;
   outline: none;
   color: $text-color;
   transition: ease-out all 300ms;

@@ -84,14 +84,32 @@
 
 #blog {
   .blog-header {
-    padding: 200px 0;
+    padding: 150px 0 120px;
     position: relative;
     background: url('../img/banner/blog.jpg') no-repeat top left;
     background-size: cover;
 
+    .max-width {
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
+    h1 {
+      color: $white-color;
+      text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.6), -4px -4px 15px rgba(0, 0, 0, 0.6);
+    }
+
     p {
-      font-size: 1.25rem;
+      font-size: 1.375rem;
       max-width: 600px;
+
+      span {
+        display: inline;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 4px;
+        margin-bottom: 4px;
+        line-height: 2.2;
+      }
     }
 
     &:after {
@@ -112,13 +130,16 @@
 
   .blog-list {
     position: relative;
-    margin-top: -6rem;
     border-radius: 4px;
     max-width: 800px;
+    margin: 0 auto;
+    // padding: 1rem 2rem 2rem;
+    // background-color: rgba(0, 0, 0, 0.25);
+    // backdrop-filter: blur(2px);
 
     h2 {
       font-size: 2.5rem;
-      margin-bottom: 2rem;
+      margin: 0 0 2rem;
     }
 
     .banner-post {
