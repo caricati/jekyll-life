@@ -911,10 +911,6 @@
     @media screen and (max-width: $max-width-container) {
       width: 2rem;
     }
-
-    @media screen and (max-width: 550px) {
-      width: 1rem;
-    }
   }
 
   .feature-figure-cover {
@@ -970,8 +966,8 @@
       margin-bottom: 1rem;
       line-height: 1.15;
 
-      @media screen and (max-width: 370px) {
-        font-size: 2rem;
+      @media screen and (max-width: 420px) {
+        font-size: 3.25rem;
       }
     }
   }

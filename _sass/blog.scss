@@ -90,7 +90,6 @@
     background-size: cover;
 
     .max-width {
-      margin: 0 auto;
       max-width: 800px;
     }
 
@@ -132,10 +131,13 @@
     position: relative;
     border-radius: 4px;
     max-width: 800px;
-    margin: 0 auto;
     // padding: 1rem 2rem 2rem;
     // background-color: rgba(0, 0, 0, 0.25);
     // backdrop-filter: blur(2px);
+
+    &.max-width {
+      max-width: 800px;
+    }
 
     h2 {
       font-size: 2.5rem;

@@ -45,19 +45,19 @@
 
     span {
       width: 100%;
-      height: 3px;
+      height: 4px;
       background-color: $gray-3-color;
       display: block;
-      border-radius: 2px;
+      border-radius: 1px;
 
       &::after, &::before {
         content: '';
         width: 100%;
-        height: 3px;
+        height: 4px;
         background-color: $gray-3-color;
         display: block;
         position: absolute;
-        border-radius: 2px;
+        border-radius: 1px;
       }
 
       
