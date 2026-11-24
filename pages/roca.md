@@ -3,6 +3,7 @@ layout: category
 title: Roça
 permalink: /roca
 category: roca
+published: false
 description: "Projetos práticos na roça, plantio e maneijo das hortas e das frutíferas. Coleta de lenhas, motoserras e melhorias gerais no espaço verde."
 tags:
   - jardim
